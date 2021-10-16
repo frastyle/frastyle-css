@@ -1,4 +1,4 @@
-# ✈️ Frastyle Framework BETA
+# ✈️ Frastyle Framework v0.1.0
 ![Created In Indonesia](https://img.shields.io/badge/created%20in-Indonesia-red?style=flat-square)
 [![GitHub License](https://img.shields.io/github/license/frastyle/frastyle-css?style=flat-square)](https://github.com/frastyle/frastyle-css/blob/main/LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/frastyle-css?style=flat-square)](https://www.npmjs.com/package/frastyle-css)
@@ -32,12 +32,12 @@ Pilih salah satu dari opsi metode instalasi yang tersedia:
 Pilih salah satu dari CDNs berikut untuk instalasi dan masukkan kode ke dalam tag `<head>` html.
 - **JsDelivr** : `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/frastyle-css/dist/css/frastyle.min.css">`
 
-- **Unpkg** : `<link rel="stylesheet" href="https://unpkg.com/frastyle-css@0.1.0-beta/dist/css/frastyle.min.css">`
+- **Unpkg** : `<link rel="stylesheet" href="https://unpkg.com/frastyle-css@0.1.0/dist/css/frastyle.min.css">`
 
 #### Instal Manual
-[Unduh versi terakhir](https://github.com/frastyle/frastyle-framework/releases/download/v0.1.0-beta.1/frastyle-framework-v0.1.0-beta.zip)
+[Unduh versi terakhir](https://github.com/frastyle/frastyle-css/releases/download/v0.1.0/frastyle-css-v0.1.0.zip)
 atau clone the repo
-`git clone https://github.com/frastyle/frastyle-framework.git`
+`git clone https://github.com/frastyle/frastyle-css.git`
 
 ### Dukungan Browser
 
