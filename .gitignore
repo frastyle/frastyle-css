@@ -12,6 +12,8 @@
 /src/themes
 
 # Ignore file
+*.zip
+*.rar
 
 # Ignore misc
 .DS_Store

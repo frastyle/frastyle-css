@@ -1,18 +1,18 @@
 {
-	"name": "frastyle",
-	"version": "0.1.0-beta.1",
+	"name": "frastyle-css",
+	"version": "0.1.0",
 	"description": "Frastyle Framework merupakan sebuah framework Cascading Style Sheets yang dibuat di Indonesia untuk dapat membantu developer dalam mengembangkan antarmuka website Modern dan Responsif. Didukung dengan dokumentasi bahasa Indonesia.",
 	"author": "Bagas Nur <hello.bagasnur@gmail.com> (https://bagasnur.my.id)",
 	"license": "MIT",
 	"main": "./dist/css/frastyle.min.css",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/frastyle/frastyle-framework.git"
+		"url": "git+https://github.com/frastyle/frastyle-css.git"
 	},
 	"bugs": {
-		"url": "https://github.com/frastyle/frastyle-framework/issues"
+		"url": "https://github.com/frastyle/frastyle-css/issues"
 	},
-	"homepage": "https://github.com/frastyle/frastyle-framework#readme",
+	"homepage": "https://github.com/frastyle/frastyle-css#readme",
 	"keywords": [
 		"css",
 		"framework",
@@ -47,6 +47,7 @@
 		"autoprefixer": "9.7.6",
 		"cssnano": "4.1.10",
 		"gulp": "^4.0.2",
+		"gulp-cli": "^2.3.0",
 		"gulp-cssbeautify": "^3.0.0",
 		"gulp-header-comment": "^0.9.0",
 		"gulp-merge-media-queries": "^0.2.1",
@@ -57,7 +58,8 @@
 		"prettier": "2.3.2",
 		"sass": "^1.35.1"
 	},
-	"dependencies": {
-		"gulp-cli": "^2.3.0"
-	}
+	"directories": {
+		"test": "test"
+	},
+	"dependencies": {}
 }
