@@ -1,0 +1,17 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  QUOTE
+//	Avaliable Customs Variable:
+//	--bg-quote, --space-quote, --corner-quote
+
+blockquote {
+	background: var(--bg-quote, var(--light));
+	margin: 0.5em 0em;
+	padding: var(--space-quote, 0.75em 1.5em);
+	border-radius: var(--corner-quote);
+	& > :last-child {
+		margin-bottom: 0;
+	}
+}

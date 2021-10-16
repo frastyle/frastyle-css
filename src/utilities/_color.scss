@@ -1,0 +1,48 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	COLORS
+//	Avaliable Customs Variable:
+//	--primary, --secondary, --success, -warning, --danger,
+//	--info, --dark, --dark-[1-5], --light, --light-[1-5],
+//	--black, --white
+
+@mixin colors($color, $n: 1) {
+	@for $i from 0 to $n {
+		@if $i == 0 {
+			.#{$color} {
+				color: var(--#{$color}) !important;
+			}
+			.bg-#{$color} {
+				background: var(--#{$color}) !important;
+			}
+			.outline-#{$color} {
+				border: 2px solid var(--#{$color}) !important;
+			}
+		} @else {
+			@if $color != 'dark' or $color != 'light' {
+				.#{$color}-#{$i} {
+					color: var(--#{$color}-#{$i}) !important;
+				}
+			}
+			.bg-#{$color}-#{$i} {
+				background: var(--#{$color}-#{$i}) !important;
+			}
+			.outline-#{$color}-#{$i} {
+				border: 2px solid var(--#{$color}-#{$i}) !important;
+			}
+		}
+	}
+}
+
+@include colors('primary');
+@include colors('secondary');
+@include colors('success');
+@include colors('warning');
+@include colors('danger');
+@include colors('info');
+@include colors('dark', 6);
+@include colors('light', 6);
+@include colors('black');
+@include colors('white');

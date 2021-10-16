@@ -1,0 +1,164 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	MAIN FRASTYLE CSS FRAMEWORK
+
+//  Set root variables
+@use 'variables';
+
+//  # CSS Reset #
+//  Use resets default
+@use 'resets';
+
+//  Set Layouts Style
+@use 'layouts/grid';
+@use 'utilities/display';
+@use 'layouts//position';
+
+//  Set Typography Style
+@use 'typography/typography';
+
+//  Set Elements Style
+@use 'elements/button';
+@use 'elements/code';
+@use 'elements/forms';
+@use 'elements/image';
+@use 'elements/lists';
+@use 'elements/quotation';
+@use 'elements/table';
+
+//  Set Components Style
+@use 'components/alert';
+@use 'components/badge';
+@use 'components/breadcrumbs';
+@use 'components/card';
+
+//  Set Utilities Style
+@use 'utilities/color';
+@use 'utilities/shadows';
+@use 'utilities/spacing';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+
+//  Root variables
+:root {
+	--success: hsl(130, 75%, 45%);
+	--warning: hsl(40, 90%, 55%);
+	--danger: hsl(0, 75%, 55%);
+	--info: hsl(200, 75%, 45%);
+}
+
+//  Default Style Button
+%text-white {
+	--text-button: var(--white);
+}
+.button {
+	&-success {
+		--bg-button: var(--success);
+		--bg-button-hover: hsl(130, 70%, 50%);
+		@extend %text-white;
+	}
+	&-warning {
+		--bg-button: var(--warning);
+		--bg-button-hover: hsl(40, 93%, 60%);
+		@extend %text-white;
+	}
+	&-danger {
+		--bg-button: var(--danger);
+		--bg-button-hover: hsl(0, 78%, 60%);
+		@extend %text-white;
+	}
+	&-info {
+		--bg-button: var(--info);
+		--bg-button-hover: hsl(200, 75%, 50%);
+		@extend %text-white;
+	}
+}
+
+//  Default Style Forms
+.form {
+	&-input {
+		& label {
+			padding-bottom: 0.5em;
+		}
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+//  Default Style Quotation
+blockquote {
+	& > cite {
+		margin-left: 16px;
+		&:before {
+			content: '- ';
+			margin-left: -16px;
+		}
+	}
+	& > figcaption {
+		font: 0.875rem 'Poppins';
+		margin-left: 16px;
+		&:before {
+			content: '- ';
+			margin-left: -16px;
+		}
+	}
+}
+
+//  Default Style Table
+table {
+	&.table {
+		&.stripe {
+			tr {
+				&:nth-child(even) {
+					background: var(--light);
+				}
+			}
+		}
+		tr {
+			&:hover,
+			&:nth-child(even):hover {
+				background: var(--light-1);
+			}
+		}
+		th {
+			background-color: var(--bg-header, var(--light-2));
+		}
+	}
+	.column-fit {
+		width: 0;
+		white-space: nowrap;
+	}
+}
+
+//  Default Text Alignment
+@mixin align-text($bp: '') {
+	.text#{$bp} {
+		&-left {
+			text-align: left;
+		}
+		&-right {
+			text-align: right;
+		}
+		&-center {
+			text-align: center;
+		}
+		&-justify {
+			text-align: justify;
+		}
+	}
+}
+
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@include align-text();
+	}
+	@media screen and (min-width: $width) {
+		@if $bp != 'xs' {
+			@include align-text($bp: '-' + $bp);
+		}
+	}
+}

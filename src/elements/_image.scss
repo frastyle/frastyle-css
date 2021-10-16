@@ -1,0 +1,23 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+// 	IMAGE
+
+img {
+	&.fit-none {
+		object-fit: none;
+	}
+	&.fit-cover {
+		object-fit: cover;
+	}
+	&.fit-contain {
+		object-fit: contain;
+	}
+	&.fit-fill {
+		object-fit: fill;
+	}
+	&.fit-scale-down {
+		object-fit: scale-down;
+	}
+}

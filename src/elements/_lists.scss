@@ -1,0 +1,34 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  LISTING
+//	Avaliable Customs Variable:
+//	--text-list-dd
+
+//	Ordered/Unordered List
+ul,
+ol {
+	padding-left: 1.5em;
+	margin: 0.25em 0em 1em;
+}
+
+ul ul,
+ol ol {
+	margin: 0em;
+}
+
+//	Definition List
+dt {
+	margin-top: 0.25em;
+}
+
+dl {
+	margin: 0.25em 0em 1em;
+}
+
+dd {
+	color: var(--text-list-dd, var(--dark-5));
+	padding-left: 1em;
+	margin: 0;
+}

@@ -1,0 +1,37 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Using variables
+@use './variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800');
+
+//	BROWSER RESETS
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Poppins', 'Trebuchet MS', sans-serif;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	letter-spacing: 0.05rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition-timing-function: ease;
+	margin: 0;
+}
+
+@media screen and (max-width: map-get($breakpoints, 's') - 1px) {
+	html {
+		font-size: 14px;
+	}
+}

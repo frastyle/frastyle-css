@@ -1,0 +1,62 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Using variables
+@use '../variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+$spaces: variables.$spaces;
+$sides: variables.$sides;
+$scale-size: 4px !default; // scale size in common devices;
+
+//	SPACING
+
+//  Set mixin to generate margin & padding
+@mixin spacing($bp: '') {
+	@each $initSpace, $valSpace in $spaces {
+		@each $i, $side in $sides {
+			@if $i == 'l' or $i == 'r' {
+				@for $n from 0 through 9 {
+					.#{$initSpace}#{$i}#{$bp}-#{$n},
+					.#{$initSpace}x#{$bp}-#{$n},
+					.#{$initSpace}#{$bp}-#{$n} {
+						#{$valSpace}-#{$side}: $scale-size * ($n * 4);
+					}
+				}
+			}
+			@if $i == 't' or $i == 'b' {
+				@for $n from 0 through 9 {
+					.#{$initSpace}#{$i}#{$bp}-#{$n},
+					.#{$initSpace}y#{$bp}-#{$n},
+					.#{$initSpace}#{$bp}-#{$n} {
+						#{$valSpace}-#{$side}: $scale-size * ($n * 4);
+					}
+				}
+			}
+		}
+		.#{$initSpace}x#{$bp}-auto,
+		.#{$initSpace}#{$bp}-auto {
+			#{$valSpace}-left: auto;
+			#{$valSpace}-right: auto;
+		}
+		.#{$initSpace}y#{$bp}-auto,
+		.#{$initSpace}#{$bp}-auto {
+			#{$valSpace}-top: auto;
+			#{$valSpace}-bottom: auto;
+		}
+	}
+}
+
+//  Margin & Padding
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@include spacing();
+	}
+	@media screen and (min-width: $width) {
+		@if $bp != 'xs' {
+			@include spacing($bp: '-' + $bp);
+		}
+	}
+}

@@ -1,0 +1,72 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	BUTTON
+//	Avaliable Customs Variable:
+//	--bg-button, --text-button, --space-button, --border-button,
+//	--corner-button, --bg-button-hover, --text-button-hover,
+//	--border-button-hover, --text-link, --decoration-link,
+//	--text-link-hover, --decoration--link-hover
+
+button,
+[class*='button'],
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	background: var(--bg-button, #e4e6e7);
+	color: var(--text-button);
+	font: 1rem/1 'Poppins';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: var(--space-button, 0.55em 2em 0.5em);
+	margin: 0.25em;
+	text-decoration: none;
+	border: var(--border-button);
+	border-radius: var(--corner-button);
+	//	On Hover/Focus/Active Button
+	&:hover,
+	&:focus,
+	&.active {
+		background: var(--bg-button-hover, var(--bg-button, #d6dadb));
+		color: var(--text-button-hover, var(--text-button));
+		border: var(--border-button-hover, var(--color-button));
+	}
+	//	On Disabled Button
+	&:disabled,
+	&.disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+		&:hover {
+			background: var(--bg-button, #e4e6e7);
+			color: var(--text-button);
+			border: var(--border-button);
+		}
+	}
+}
+
+//	LINK
+a {
+	--text-link-hover: #3319b3;
+	color: var(--text-link, var(--link));
+	text-decoration: var(--decoration-link);
+	//	On Hover/Focus/Active Link
+	&:hover,
+	&:focus,
+	&.active {
+		color: var(--text-link-hover, var(--link));
+		text-decoration: var(--decoration-link-hover);
+	}
+	//	On Disabled Link
+	&:disabled,
+	&.disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+		&:hover {
+			color: var(--text-link, var(--link));
+			text-decoration: var(--decoration-link);
+		}
+	}
+}

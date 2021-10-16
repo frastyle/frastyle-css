@@ -1,0 +1,112 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Using variables
+@use '../variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+
+//	DISPLAY
+
+@mixin overflow($bp: '') {
+	.overflow {
+		&#{$bp},
+		&-x#{$bp} {
+			&-hidden {
+				overflow-x: hidden;
+			}
+			&-visible {
+				overflow-x: visible;
+			}
+			&-scroll {
+				overflow-x: scroll;
+			}
+			&-auto {
+				overflow-x: auto;
+			}
+		}
+		&#{$bp},
+		&-y#{$bp} {
+			&-hidden {
+				overflow-y: hidden;
+			}
+			&-visible {
+				overflow-y: visible;
+			}
+			&-scroll {
+				overflow-y: scroll;
+			}
+			&-auto {
+				overflow-y: auto;
+			}
+		}
+	}
+}
+
+@mixin display($bp: '') {
+	.d#{$bp} {
+		&-none {
+			display: none;
+		}
+		// Block
+		&-block {
+			display: block;
+		}
+
+		// Flex
+		&-flex {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		// Grid
+		&-grid {
+			display: grid;
+		}
+
+		// Inline
+		&-inline {
+			display: inline;
+			&-block {
+				display: inline-block;
+			}
+			&-flex {
+				display: inline-flex;
+			}
+			&-table {
+				display: inline-table;
+			}
+		}
+	}
+}
+
+//  Generate Display
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@include display();
+	}
+	@media screen and (min-width: $width) {
+		@if $bp != 'xs' {
+			@include display($bp: '-' + $bp);
+		}
+	}
+}
+
+[class*='flex-'] {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+//  Generate Overflow
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@include overflow();
+	}
+	@media screen and (min-width: $width) {
+		@if $bp != 'xs' {
+			@include overflow($bp: '-' + $bp);
+		}
+	}
+}

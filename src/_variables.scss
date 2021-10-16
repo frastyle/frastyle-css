@@ -1,0 +1,70 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	VARIABLES
+
+//  # Breakpoints #
+//  Default value for grid breakpoints
+$breakpoints: (
+	'xs': 0px,
+	's': 540px,
+	'm': 768px,
+	'l': 992px,
+	'xl': 1280px,
+) !default;
+
+//  # Layouts #
+//  | Scale size in common devices is 4px
+//  Grid System
+$gap: 12px;
+$gap-small: 8px;
+$gap-medium: 16px;
+$gap-large: 24px;
+
+//  # Margin & Padding #
+//  Default value for side position
+$sides: (
+	't': 'top',
+	'r': 'right',
+	'b': 'bottom',
+	'l': 'left',
+) !default;
+//  Default value for margin & padding
+$spaces: (
+	'm': 'margin',
+	'p': 'padding',
+) !default;
+
+//  # Shadow #
+$shadow: 0px 16px 20px -8px rgba(0, 0, 0, 0.3),
+	0px 8px 32px -8px rgba(0, 0, 0, 0.1);
+$shadow-small: 0 8px 20px -8px rgba(0, 0, 0, 0.3),
+	0 4px 8px -4px rgba(0, 0, 0, 0.1);
+$shadow-large: 0 24px 32px -8px rgba(0, 0, 0, 0.2),
+	0 12px 20px -8px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0px 16px 20px -8px rgba(0, 0, 0, 0.5),
+	0px 8px 32px -8px rgba(0, 0, 0, 0.25);
+$shadow-dark-small: 0 8px 20px -8px rgba(0, 0, 0, 0.5),
+	0 4px 8px -4px rgba(0, 0, 0, 0.25);
+$shadow-dark-large: 0 24px 32px -8px rgba(0, 0, 0, 0.5),
+	0 12px 20px -8px rgba(0, 0, 0, 0.25);
+
+//  Root variables
+:root {
+	--link: hsl(200, 75%, 45%);
+	--white: #ffffff;
+	--light: #f2f2f2;
+	--light-1: #e4e6e7;
+	--light-2: #d6dadb;
+	--light-3: #bbc1c4;
+	--light-4: #9fa8ad;
+	--light-5: #829097;
+	--black: #0d0d0d;
+	--dark: #161b1d;
+	--dark-1: #21282c;
+	--dark-2: #2c353a;
+	--dark-3: #435056;
+	--dark-4: #5b6a71;
+	--dark-5: #73848c;
+}

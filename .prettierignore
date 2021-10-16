@@ -1,0 +1,8 @@
+# Ignore Folder:
+build
+node_modules
+coverage
+
+# Ignore File:
+*.min.css
+*.min.js

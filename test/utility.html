@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="/dist/css/frastyle.css" />
+		<style>
+			/* Preview in dark mode */
+			/* body {
+                --light: var(--dark-1);
+                --light-1: var(--dark-2);
+                --light-2: var(--dark-3);
+                --light-3: var(--dark-4);
+                color: white;
+                background: var(--dark);
+            } */
+			/* End preview in dark mode */
+
+			hr {
+				border-top: 2px solid;
+			}
+
+			hr.dash {
+				border-top: 2px dashed #8c8b8b;
+			}
+
+			h4,
+			h5,
+			h6,
+			p {
+				text-align: center;
+			}
+
+			[class*='colors'] > * {
+				text-align: center;
+				border: 2px solid var(--dark);
+			}
+
+			.bgcolors > .bg-black,
+			.bgcolors > [class*='bg-dark'] {
+				color: var(--light);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-row justify-center">
+			<a href="layout.html" class="button">Tata Letak</a>
+			<a href="element.html" class="button">Elemen</a>
+			<a href="typography.html" class="button">Tipografi</a>
+			<a href="component.html" class="button">Komponen</a>
+			<a
+				href="utility.html"
+				class="button"
+				style="background: #3c71dd; color: white"
+				>Peralatan</a
+			>
+		</div>
+		<h4>Peralatan</h4>
+		<hr />
+		<h5># Color #</h5>
+		<hr class="dash" />
+		<h6>Color Default</h6>
+		<p class="my-1">
+			Color default yang dimiliki sebanyak 18 warna dimana 10 diantaranya
+			merupakan turunan warna menurut tingkat kecerahan.
+		</p>
+		<div class="container">
+			<div class="row bgcolors">
+				<div class="box-3 bg-success">success</div>
+				<div class="box-3 bg-danger">danger</div>
+				<div class="box-3 bg-warning">warning</div>
+				<div class="box-3 bg-info">info</div>
+				<div class="box-2 bg-light">light</div>
+				<div class="box-2 bg-light-1">light-1</div>
+				<div class="box-2 bg-light-2">light-2</div>
+				<div class="box-2 bg-light-3">light-3</div>
+				<div class="box-2 bg-light-4">light-4</div>
+				<div class="box-2 bg-light-5">light-5</div>
+				<div class="box-2 bg-dark">dark</div>
+				<div class="box-2 bg-dark-1">dark-1</div>
+				<div class="box-2 bg-dark-2">dark-2</div>
+				<div class="box-2 bg-dark-3">dark-3</div>
+				<div class="box-2 bg-dark-4">dark-4</div>
+				<div class="box-2 bg-dark-5">dark-5</div>
+				<div class="box-6 bg-black">black</div>
+				<div class="box-6 bg-white">white</div>
+			</div>
+			<div class="row colors">
+				<div class="box-3 success">text success</div>
+				<div class="box-3 danger">text danger</div>
+				<div class="box-3 warning">text warning</div>
+				<div class="box-3 info">text info</div>
+				<div class="box-2 bg-black light">text light</div>
+				<div class="box-2 bg-black light-1">text light-1</div>
+				<div class="box-2 bg-black light-2">text light-2</div>
+				<div class="box-2 bg-black light-3">text light-3</div>
+				<div class="box-2 bg-black light-4">text light-4</div>
+				<div class="box-2 bg-black light-5">text light-5</div>
+				<div class="box-2 dark">text dark</div>
+				<div class="box-2 dark-1">text dark-1</div>
+				<div class="box-2 dark-2">text dark-2</div>
+				<div class="box-2 dark-3">text dark-3</div>
+				<div class="box-2 dark-4">text dark-4</div>
+				<div class="box-2 dark-5">text dark-5</div>
+				<div class="box-6 black">text black</div>
+				<div class="box-6 bg-black white">text white</div>
+			</div>
+			<div class="row text-center">
+				<div class="box-3 outline-success">outline success</div>
+				<div class="box-3 outline-warning">outline warning</div>
+				<div class="box-3 outline-danger">outline danger</div>
+				<div class="box-3 outline-info">outline info</div>
+				<div class="box-2 outline-light">outline light</div>
+				<div class="box-2 outline-light-1">outline light-1</div>
+				<div class="box-2 outline-light-2">outline light-2</div>
+				<div class="box-2 outline-light-3">outline light-3</div>
+				<div class="box-2 outline-light-4">outline light-4</div>
+				<div class="box-2 outline-light-5">outline light-5</div>
+				<div class="box-2 outline-dark">outline dark</div>
+				<div class="box-2 outline-dark-1">outline dark-1</div>
+				<div class="box-2 outline-dark-2">outline dark-2</div>
+				<div class="box-2 outline-dark-3">outline dark-3</div>
+				<div class="box-2 outline-dark-4">outline dark-4</div>
+				<div class="box-2 outline-dark-5">outline dark-5</div>
+				<div class="box-6 outline-black">outline black</div>
+				<div class="box-6 outline-white">outline white</div>
+			</div>
+		</div>
+		<hr />
+		<h5># Display #</h5>
+		<hr class="dash" />
+		<h6>Type of display</h6>
+		<p class="my-1">
+			Untuk mengatur display pada komponen di tata letak, class yang
+			tersedia yaiu sebagai berikut.
+		</p>
+		<p class="my-1">
+			Display juga mendukung penggunaan breakpoints dengan menyisipkan
+			kode breakpoint pada tanda *.
+		</p>
+		<div class="container">
+			<table>
+				<thead>
+					<th>Class</th>
+					<th>Keterangan</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>d-none</code> atau <code>d-*-none</code></td>
+						<td>Display None</td>
+					</tr>
+					<tr>
+						<td>
+							<code>d-block</code> atau <code>d-*-block</code>
+						</td>
+						<td>Display Block</td>
+					</tr>
+					<tr>
+						<td>
+							<code>d-flex</code> atau <code>d-*-flex</code> atau
+							<code>flex-</code>
+						</td>
+						<td>Display FLex & Wrap</td>
+					</tr>
+					<tr>
+						<td><code>d-grid</code> atau <code>d-*-grid</code></td>
+						<td>Display Grid</td>
+					</tr>
+					<tr>
+						<td>
+							<code>d-inline</code> atau <code>d-*-inline</code>
+						</td>
+						<td>Display Inline</td>
+					</tr>
+					<tr>
+						<td>
+							<code>d-inline-block</code> atau
+							<code>d-*-inline-block</code>
+						</td>
+						<td>Display Inline Block</td>
+					</tr>
+					<tr>
+						<td>
+							<code>d-inline-flex</code> atau
+							<code>d-*-inline-flex</code>
+						</td>
+						<td>Display Inline Flex</td>
+					</tr>
+					<tr>
+						<td>
+							<code>d-inline-table</code> atau
+							<code>d-*-inline-table</code>
+						</td>
+						<td>Display Inline Table</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr />
+		<h5># Shadows #</h5>
+		<hr class="dash" />
+		<h6>Type of shadow</h6>
+		<p class="my-1">
+			Shadow memiliki 2 mode yaitu default dan dark dimana masing-masing
+			memiliki 3 tipe yaitu default, small, dan large.
+		</p>
+		<p class="my-1">
+			Shadow juga mendukung penggunaan breakpoints dengan menyisipkan kode
+			breakpoint pada tanda *.
+		</p>
+		<div class="container">
+			<div class="row gap-large">
+				<div class="box box-m-4 shadow-small p-3">
+					Shadow small <code>shadow-small</code> atau
+					<code>shadow-*-small</code>
+				</div>
+				<div class="box box-m-4 shadow p-3">
+					Only shadow <code>shadow</code> atau <code>shadow-*</code>
+				</div>
+				<div class="box box-m-4 shadow-large p-3">
+					Shadow large <code>shadow-large</code> atau
+					<code>shadow-*-large</code>
+				</div>
+				<div class="box box-m-4 shadow-dark-small p-3">
+					Shadow dark small <code>shadow-dark-small</code> atau
+					<code>shadow-*-dark-small</code>
+				</div>
+				<div class="box box-m-4 shadow-dark p-3">
+					Only dark shadow <code>shadow-dark</code> atau
+					<code>shadow-*-dark</code>
+				</div>
+				<div class="box box-m-4 shadow-dark-large p-3">
+					Shadow dark large <code>shadow-dark-large</code> atau
+					<code>shadow-*-dark-large</code>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<h5># Spacing #</h5>
+		<hr class="dash" />
+		<h6>Padding</h6>
+		<div class="container">
+			<div class="row items-center">
+				<div class="box bg-success p-0">
+					<div class="bg-light-2">Padding 0</div>
+				</div>
+				<div class="box bg-success p-1">
+					<div class="bg-light-2">Padding 1</div>
+				</div>
+				<div class="box bg-success p-2">
+					<div class="bg-light-2">Padding 2</div>
+				</div>
+				<div class="box bg-success p-3">
+					<div class="bg-light-2">Padding 3</div>
+				</div>
+				<div class="box bg-success p-4">
+					<div class="bg-light-2">Padding 4</div>
+				</div>
+				<div class="box bg-success p-5">
+					<div class="bg-light-2">Padding 5</div>
+				</div>
+				<div class="box bg-success p-6">
+					<div class="bg-light-2">Padding 6</div>
+				</div>
+			</div>
+		</div>
+		<hr class="dash" />
+		<h6>Margin</h6>
+		<div class="container">
+			<div class="row items-center">
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-0">Margin 0</div>
+					<div class="bg-light-2 m-0">Margin 0</div>
+				</div>
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-1">Margin 1</div>
+					<div class="bg-light-2 m-1">Margin 1</div>
+				</div>
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-2">Margin 2</div>
+					<div class="bg-light-2 m-2">Margin 2</div>
+				</div>
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-3">Margin 3</div>
+					<div class="bg-light-2 m-3">Margin 3</div>
+				</div>
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-4">Margin 4</div>
+					<div class="bg-light-2 m-4">Margin 4</div>
+				</div>
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-5">Margin 5</div>
+					<div class="bg-light-2 m-5">Margin 5</div>
+				</div>
+				<div class="box bg-warning">
+					<div class="bg-light-2 m-6">Margin 6</div>
+					<div class="bg-light-2 m-6">Margin 6</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+	</body>
+</html>

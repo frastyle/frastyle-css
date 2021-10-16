@@ -1,0 +1,55 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Using variables
+@use '../variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+$shadow: variables.$shadow;
+$shadow-small: variables.$shadow-small;
+$shadow-large: variables.$shadow-large;
+$shadow-dark: variables.$shadow-dark;
+$shadow-dark-small: variables.$shadow-dark-small;
+$shadow-dark-large: variables.$shadow-dark-large;
+
+//	SHADOWS
+//	Avaliable Customs Variable:
+//	--shadow, --shadow-small, --shadow-large, --shadow-dark,
+//	--shadow-dark-small, --shadow-dark-large
+
+:root {
+	--shadow: #{$shadow};
+	--shadow-small: #{$shadow-small};
+	--shadow-large: #{$shadow-large};
+	--shadow-dark: #{$shadow-dark};
+	--shadow-dark-small: #{$shadow-dark-small};
+	--shadow-dark-large: #{$shadow-dark-large};
+}
+
+@mixin shadows($bp: '', $theme: '') {
+	.shadow#{$bp}#{$theme} {
+		box-shadow: var(--shadow#{$theme});
+		&-small {
+			box-shadow: var(--shadow#{$theme}-small);
+		}
+		&-large {
+			box-shadow: var(--shadow#{$theme}-large);
+		}
+	}
+}
+
+// Shadows
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@include shadows();
+		@include shadows($theme: '-dark');
+	}
+	@media screen and (min-width: $width) {
+		@if $bp != 'xs' {
+			@include shadows($bp: '-' + $bp);
+			@include shadows($bp: '-' + $bp, $theme: '-dark');
+		}
+	}
+}

@@ -1,0 +1,56 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	CARDS
+//	Avaliable Customs Variable:
+//	--bg-card, --text-card, --space-card, --border-card,
+//	--corner-card
+
+%card {
+	word-wrap: break-word;
+	background: var(--bg-card, var(--white));
+	color: var(--text-card);
+	padding: var(--space-card, 1em 1.5em);
+	border: var(--border-card, 1px solid var(--light-2));
+	border-radius: var(--corner-card);
+}
+
+.card {
+	@extend %card;
+	p:last-child {
+		margin: 0;
+	}
+	& .card-img {
+		display: block;
+		width: 100%;
+	}
+}
+.card {
+	&-primary {
+		@extend %card;
+	}
+	&-secondary {
+		@extend %card;
+	}
+	&-success {
+		@extend %card;
+		--bg-card: hsl(130, 90%, 95%);
+		--border-card: 1px solid var(--success);
+	}
+	&-warning {
+		@extend %card;
+		--bg-card: hsl(45, 90%, 95%);
+		--border-card: 1px solid var(--warning);
+	}
+	&-danger {
+		@extend %card;
+		--bg-card: hsl(0, 70%, 95%);
+		--border-card: 1px solid var(--danger);
+	}
+	&-info {
+		@extend %card;
+		--bg-card: hsl(200, 75%, 95%);
+		--border-card: 1px solid var(--info);
+	}
+}

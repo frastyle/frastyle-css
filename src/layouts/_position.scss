@@ -1,0 +1,130 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Using variables
+@use '../variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+
+//	POSITIONING
+
+@mixin position($bp: '') {
+	.flex#{$bp} {
+		//  Flex: Direction
+		&-column {
+			flex-direction: column;
+		}
+		&-row {
+			flex-direction: row;
+		}
+		//  Flex: Wrap
+		&-nowrap {
+			flex-wrap: nowrap;
+		}
+		&-wrap {
+			flex-wrap: wrap;
+		}
+		&-wrap-reverse {
+			flex-wrap: wrap-reverse;
+		}
+	}
+	//  Flex: Reverse Flow
+	.x#{$bp}-reverse {
+		flex-flow: row-reverse;
+	}
+	.y#{$bp}-reverse {
+		flex-flow: column-reverse;
+	}
+	//  Flex: Justify Content
+	.justify#{$bp} {
+		&-start {
+			justify-content: flex-start;
+		}
+		&-end {
+			justify-content: flex-end;
+		}
+		&-center {
+			justify-content: center;
+		}
+		&-between {
+			justify-content: space-between;
+		}
+		&-around {
+			justify-content: space-around;
+		}
+		&-evenly {
+			justify-content: space-evenly;
+		}
+	}
+	//  Flex: Align Content
+	.content#{$bp} {
+		&-start {
+			align-content: flex-start;
+		}
+		&-end {
+			align-content: flex-end;
+		}
+		&-center {
+			align-content: center;
+		}
+		&-between {
+			align-content: space-between;
+		}
+		&-around {
+			align-content: space-around;
+		}
+		&-stretch {
+			align-content: stretch;
+		}
+	}
+	//  Flex: Align Items
+	.items#{$bp} {
+		&-start {
+			align-items: flex-start;
+		}
+		&-end {
+			align-items: flex-end;
+		}
+		&-center {
+			align-items: center;
+		}
+		&-baseline {
+			align-items: baseline;
+		}
+		&-stretch {
+			align-items: stretch;
+		}
+	}
+	//  Flex: Align Self
+	.self#{$bp} {
+		&-start {
+			align-self: flex-start;
+		}
+		&-end {
+			align-self: flex-end;
+		}
+		&-center {
+			align-self: center;
+		}
+		&-baseline {
+			align-self: baseline;
+		}
+		&-stretch {
+			align-self: stretch;
+		}
+	}
+}
+
+//  Generate Possition
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@include position();
+	}
+	@media screen and (min-width: $width) {
+		@if $bp != 'xs' {
+			@include position($bp: '-' + $bp);
+		}
+	}
+}

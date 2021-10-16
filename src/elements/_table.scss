@@ -1,0 +1,21 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	TABLE
+//	Avaliable Customs Variable:
+//	--bg-table, --space-table, --border-table
+
+table {
+	background: var(bg-table, var(--white));
+	width: 100%;
+	table-layout: auto;
+	overflow-x: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th,
+td {
+	border: var(--border-table, 0.1rem solid var(--light-3));
+	padding: var(--space-table, 0.5rem 1rem);
+}

@@ -1,0 +1,134 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Using variables
+@use '../variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+
+//	TYPOGRAPHY
+//	Avaliable Customs Variable:
+//	--bg-mark, --corner-mark
+
+//  Heading Elements
+%heading-default {
+	margin: 0 0 0.5em;
+}
+
+h1 {
+	@extend %heading-default;
+	font: 600 2.5rem/1.4 'Poppins';
+}
+h2 {
+	@extend %heading-default;
+	font: 600 2rem/1.4 'Poppins';
+}
+h3 {
+	@extend %heading-default;
+	font: 600 1.75rem/1.4 'Poppins';
+}
+h4 {
+	@extend %heading-default;
+	font: 600 1.5rem/1.5 'Poppins';
+}
+h5 {
+	@extend %heading-default;
+	font: 600 1.25rem/1.5 'Poppins';
+}
+h6 {
+	@extend %heading-default;
+	font: 600 1rem/1.75 'Poppins';
+}
+
+@media screen and (min-width: map-get($breakpoints, 's')) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	h4 {
+		font-size: 1.5rem;
+	}
+	h5 {
+		font-size: 1.25rem;
+	}
+	h6 {
+		font-size: 1rem;
+	}
+}
+
+//  Paragraph Elements
+%paragraph-default {
+	font: 1em/1.5 'Poppins';
+}
+a,
+span {
+	@extend %paragraph-default;
+}
+p {
+	@extend %paragraph-default;
+	margin: 0 0 1em;
+}
+
+//  Text Transform
+.capitalize {
+	text-transform: capitalize;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+
+//  Text Formatting
+.bold {
+	font-weight: bolder;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+mark,
+.mark {
+	background: var(--bg-mark, #ffea8080);
+	padding: var(--corner-mark, 0.25em);
+}
+small {
+	font-size: 0.75rem;
+	line-height: 0.25em;
+}
+big {
+	font-size: 1.25rem;
+	line-height: 1.5em;
+}
+%sub-sup-default {
+	font-size: 0.75rem;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	@extend %sub-sup-default;
+	top: -0.75em;
+}
+sub {
+	@extend %sub-sup-default;
+	bottom: -0.25em;
+}
+
+abbr[title] {
+	border-bottom: 0.05rem dashed;
+	cursor: help;
+	text-decoration: none;
+}

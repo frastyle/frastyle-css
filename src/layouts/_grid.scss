@@ -1,0 +1,128 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  Import/Using
+@use "sass:math";
+@use '../variables';
+
+//  Variable declaration
+$breakpoints: variables.$breakpoints;
+$gap: variables.$gap;
+$gap-sm: variables.$gap-small;
+$gap-md: variables.$gap-medium;
+$gap-lg: variables.$gap-large;
+
+//	GRIDS
+//	Avaliable Customs Variable:
+//	--gap
+
+//  # Container #
+//  Container center for width < 1280px
+.container,
+.container-full {
+	width: 100%;
+	margin: auto;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+//  Container for width > 1280px
+@media screen and (min-width: map-get($breakpoints, 'xl')) {
+	.container {
+		max-width: map-get($breakpoints, 'xl');
+	}
+}
+//  Container for width < 768px
+@media screen and (max-width: map-get($breakpoints, 's') - 1px) {
+	.container,
+	.container-full {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+//  # Section & Row #
+//  Add gap and Set display [section, row] to flex
+section,
+.row {
+	--gap: #{$gap};
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc(var(--gap) * -1);
+	margin-right: calc(var(--gap) * -1);
+}
+
+//  # Boxs #
+//  Set mixin to generate gap
+@mixin gaps($bp: '') {
+	//  Set default gaps
+	.gap#{$bp} {
+		--gap: #{$gap};
+	}
+	//  Set gaps none
+	.gap#{$bp}-none {
+		--gap: 0px;
+	}
+	//  Set gaps small
+	.gap#{$bp}-small {
+		--gap: #{$gap-sm};
+	}
+	//  Set gaps medium
+	.gap#{$bp}-medium {
+		--gap: #{$gap-md};
+	}
+	//  Set gaps large
+	.gap#{$bp}-large {
+		--gap: #{$gap-lg};
+	}
+}
+//  Set mixin to generate box
+@mixin boxs($bp: '', $i) {
+	.box#{$bp}-#{$i} {
+		width: calc(#{math.percentage(math.div($i, 12))} - (var(--gap) * 2));
+		flex-basis: calc(
+			#{math.percentage(math.div($i, 12))} - (var(--gap) * 2)
+		);
+	}
+}
+//  Set global placeholder selectors boxs
+%boxs {
+	display: block;
+	flex: 0 0 auto;
+	margin: var(--gap-row, var(--gap)) var(--gap);
+}
+//  Set class .box
+.box {
+	@extend %boxs;
+	flex: 1 1 0;
+}
+//  Set the breakpoints
+@each $bp, $width in $breakpoints {
+	@if $bp == 'xs' {
+		@for $n from 1 through 12 {
+			//  Add global placeholder boxs
+			.box-#{$n} {
+				@extend %boxs;
+			}
+			//  Generate box if breakpoint is XS
+			@include boxs($i: $n);
+		}
+		//  Generate gap if breakpoint is XS
+		@include gaps();
+	} @else {
+		//  Add global placeholder boxs
+		@for $n from 1 through 12 {
+			.box-#{$bp}-#{$n} {
+				@extend %boxs;
+			}
+		}
+		//  Generate box amd gap if breakpoint is [ S, M, L, XL ]
+		@media screen and (min-width: $width) {
+			@for $n from 1 through 12 {
+				@include boxs($bp: '-' + $bp, $i: $n);
+			}
+			//  Generate gap if breakpoint is [ S, M, L, XL ]
+			@include gaps($bp: '-' + $bp);
+		}
+	}
+}

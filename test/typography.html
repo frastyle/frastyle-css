@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="/dist/css/frastyle.css" />
+		<style>
+			/* Preview in dark mode */
+			/* body {
+                --light: var(--dark-1);
+                --light-1: var(--dark-2);
+                --light-2: var(--dark-3);
+                --light-3: var(--dark-4);
+                color: white;
+                background: var(--dark);
+            } */
+			/* End preview in dark mode */
+
+			hr {
+				border-top: 2px solid;
+			}
+
+			hr.dash {
+				border-top: 2px dashed #8c8b8b;
+			}
+
+			h4,
+			h5,
+			h6 {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-row justify-center">
+			<a href="layout.html" class="button">Tata Letak</a>
+			<a href="element.html" class="button">Elemen</a>
+			<a
+				href="typography.html"
+				class="button"
+				style="background: #3c71dd; color: white"
+				>Tipografi</a
+			>
+			<a href="component.html" class="button">Komponen</a>
+			<a href="utility.html" class="button">Peralatan</a>
+		</div>
+		<h4>Tipografi</h4>
+		<hr />
+		<h5># Heading & Paragraph #</h5>
+		<hr class="dash" />
+		<h6>Heading [1-6]</h6>
+		<div class="container text-center">
+			<div class="flex-column">
+				<div class="box-4">
+					<h1>Hai Heading 1</h1>
+				</div>
+				<div class="box-4">
+					<h2>Hai Heading 2</h2>
+				</div>
+				<div class="box-4">
+					<h3>Hai Heading 3</h3>
+				</div>
+				<div class="box-4">
+					<h4>Hai Heading 4</h4>
+				</div>
+				<div class="box-4">
+					<h5>Hai Heading 5</h5>
+				</div>
+				<div class="box-4">
+					<h6>Hai Heading 6</h6>
+				</div>
+			</div>
+		</div>
+		<hr class="dash" />
+		<h6>Paragraph</h6>
+		<div class="container">
+			<div class="row flex-column">
+				<div class="box bg-light-1">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Incidunt, consectetur. Odio dolore aliquid
+						asperiores dolor pariatur, repellat assumenda eligendi
+						excepturi, perferendis hic dicta temporibus corrupti
+						exercitationem dignissimos illo modi ea nisi quo?
+						Assumenda, aspernatur dolorum? Ut impedit officiis
+						repellat atque provident perferendis beatae aliquid hic!
+					</p>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Incidunt, consectetur. Odio dolore aliquid
+						asperiores dolor pariatur, repellat assumenda eligendi
+						excepturi, perferendis hic dicta temporibus corrupti
+						exercitationem dignissimos illo modi ea nisi quo?
+						Assumenda, aspernatur dolorum? Ut impedit officiis
+						repellat atque provident perferendis beatae aliquid hic!
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<h5># Text Formatting #</h5>
+		<hr class="dash" />
+		<h6>Text Align</h6>
+		<div class="container">
+			<div class="row flex-column">
+				<div class="box bg-light-1">
+					<p class="text-left">
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Incidunt, consectetur. Odio dolore aliquid
+						asperiores dolor pariatur, repellat assumenda eligendi
+						excepturi, perferendis hic dicta temporibus corrupti
+						exercitationem dignissimos illo modi ea nisi quo?
+						Assumenda, aspernatur dolorum? Ut impedit officiis
+						repellat atque provident perferendis beatae aliquid hic!
+					</p>
+				</div>
+				<div class="box bg-light-1">
+					<p class="text-center">
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Incidunt, consectetur. Odio dolore aliquid
+						asperiores dolor pariatur, repellat assumenda eligendi
+						excepturi, perferendis hic dicta temporibus corrupti
+						exercitationem dignissimos illo modi ea nisi quo?
+						Assumenda, aspernatur dolorum? Ut impedit officiis
+						repellat atque provident perferendis beatae aliquid hic!
+					</p>
+				</div>
+				<div class="box bg-light-1">
+					<p class="text-right">
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Incidunt, consectetur. Odio dolore aliquid
+						asperiores dolor pariatur, repellat assumenda eligendi
+						excepturi, perferendis hic dicta temporibus corrupti
+						exercitationem dignissimos illo modi ea nisi quo?
+						Assumenda, aspernatur dolorum? Ut impedit officiis
+						repellat atque provident perferendis beatae aliquid hic!
+					</p>
+				</div>
+				<div class="box bg-light-1">
+					<p class="text-justify">
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Incidunt, consectetur. Odio dolore aliquid
+						asperiores dolor pariatur, repellat assumenda eligendi
+						excepturi, perferendis hic dicta temporibus corrupti
+						exercitationem dignissimos illo modi ea nisi quo?
+						Assumenda, aspernatur dolorum? Ut impedit officiis
+						repellat atque provident perferendis beatae aliquid hic!
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr class="dash" />
+		<h6>Capitalize</h6>
+		<div class="container text-center">
+			<div class="row">
+				<div class="box bg-light-1 uppercase p-1">
+					Uppercase lorem ipsum dolor sit amet.
+				</div>
+				<div class="box bg-light-1 lowercase p-1">
+					Lowercase lorem ipsum dolor sit amet.
+				</div>
+				<div class="box bg-light-1 capitalize p-1">
+					Capitalize lorem ipsum dolor sit amet.
+				</div>
+			</div>
+		</div>
+		<hr class="dash" />
+		<h6>Formatting</h6>
+		<div class="container text-center">
+			<div class="row items-center">
+				<div class="box box-4 bg-light-1 p-1">
+					<b>Bold</b> lorem ipsum.
+					<span class="bold">Bold class</span> lorem ipsum.
+				</div>
+				<div class="box box-4 bg-light-1 p-1">
+					<i>Italic</i> lorem ipsum.
+					<span class="italic">Italic class</span> lorem ipsum.
+				</div>
+				<div class="box box-4 bg-light-1 p-1">
+					<u>Underline</u> lorem ipsum.
+					<span class="underline">Underline class</span> lorem ipsum.
+				</div>
+				<div class="box box-6 bg-light-1 p-1">
+					<s>No longer correct</s> lorem ipsum.
+					<del>Deleted text</del> lorem ipsum.
+					<span class="strikethrough">Strikethrough class</span> lorem
+					ipsum.
+				</div>
+				<div class="box box-6 bg-light-1 p-1">
+					<mark>Marked</mark> lorem ipsum.
+					<span class="mark">Marked class</span> lorem ipsum.
+				</div>
+				<div class="box box-2 bg-light-1 p-1">
+					<big>Big</big> lorem ipsum.
+				</div>
+				<div class="box box-2 bg-light-1 p-1">
+					<small>Small</small> lorem ipsum.
+				</div>
+				<div class="box box-2 bg-light-1 p-1">
+					<sup>Sup</sup> lorem ipsum.
+				</div>
+				<div class="box box-2 bg-light-1 p-1">
+					<sub>Sub</sub> lorem ipsum.
+				</div>
+				<div class="box box-2 bg-light-1 p-1">
+					<abbr title="Abbreviation">Abbr</abbr> lorem ipsum.
+				</div>
+				<div class="box box-2 bg-light-1 p-1">
+					<a href="">Link</a> lorem ipsum.
+				</div>
+			</div>
+		</div>
+		<hr />
+	</body>
+</html>

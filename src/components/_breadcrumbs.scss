@@ -1,0 +1,21 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	BREADCRUMBS
+//	Avaliable Customs Variable:
+//	--content-breadcrumb, --space-breadcrumb
+
+.breadcrumb {
+	display: flex;
+	list-style: none;
+	> li {
+		&:not(:last-child)::after {
+			content: var(--content-breadcrumb, '/');
+			margin: 0 var(--space-breadcrumb, 4px);
+		}
+	}
+	> .active > * {
+		opacity: 0.5;
+	}
+}

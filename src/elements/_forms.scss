@@ -1,0 +1,122 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//	INPUT
+//	Avaliable Customs Variable:
+//	--bg-input, --text-input, --space-input, --border-input,
+//	--corner-input, --focus-input
+
+input:not([type='button'], [type='submit'], [type='reset']),
+textarea,
+select {
+	background: var(--bg-input, #ffffff1a);
+	color: var(--text-input);
+	font: 1rem 'Poppins';
+	margin-bottom: 0.5em;
+	border: var(--border-input, 1px solid #0d0d0d);
+	border-radius: var(--corner-input, 0);
+	outline: none;
+	&:focus {
+		box-shadow: var(--focus-input, 0 0 2px 2px #0d0d0d);
+		border: none;
+	}
+	&.required,
+	&.invalid {
+		--border-input: 1px solid var(--danger);
+		&:focus,
+		&:focus {
+			--focus-input: 0 0 2px 2px var(--danger);
+		}
+		& ~ label {
+			--text-input: var(--danger);
+		}
+	}
+	&.valid {
+		--border-input: 1px solid var(--success);
+		&:focus {
+			--focus-input: 0 0 2px 2px var(--success);
+		}
+		& ~ label {
+			--text-input: var(--success);
+		}
+	}
+	&:disabled,
+	&.disabled {
+		background: var(--bg-input, #ffffff80);
+		cursor: not-allowed;
+		opacity: 0.5;
+		& ~ label {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+}
+
+label {
+	display: inline-block;
+}
+
+input:not([type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='color']),
+textarea {
+	width: 100%;
+	padding: var(--space-input, 0.5em 1em);
+}
+
+input::-webkit-calendar-picker-indicator {
+	background-color: var(--text-input, #fff);
+	border-radius: 4px;
+}
+
+input[type*='date'],
+input[type='time'] {
+	line-height: 1.49;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	position: relative;
+	top: -1px;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	vertical-align: middle;
+	&:focus {
+		box-shadow: none;
+	}
+	& ~ label {
+		position: relative;
+		cursor: pointer;
+		color: var(--text-input);
+		padding: 0 var(--space-input, 0.5em);
+		margin: 0 0 0.5em 0.5em;
+		user-select: none;
+	}
+}
+
+input[type='color'] {
+	width: 100%;
+	padding: var(--space-input, 0px);
+}
+
+input[type='color' i]::-webkit-color-swatch-wrapper {
+	padding: var(--space-input, 0px);
+	border-radius: var(--corner-input, 0);
+	outline: none;
+}
+
+input[type='color' i]::-webkit-color-swatch {
+	padding: 0;
+	border: none;
+	border-radius: var(--corner-input);
+}
+
+select {
+	width: 100%;
+	padding: var(--space-select, 0.5em 0.8em);
+	option {
+		color: var(--black);
+		background: var(--white);
+	}
+}

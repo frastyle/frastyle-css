@@ -1,0 +1,34 @@
+//	© 2021 Frastyle CSS Framework v0.1.0-beta.1.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  BADGE
+//	Avaliable Customs Variable:
+//	--bg-badge, --text-badge, --space-badge, --border-badge,
+//	--corner-badge
+
+[class*='badge'] {
+	background: var(--bg-badge, var(--info));
+	color: var(--text-badge, var(--white));
+	padding: var(--space-badge, 0.125em 0.75em);
+	border: var(--border-badge);
+	border-radius: var(--corner-badge);
+}
+
+.badge {
+	&-large {
+		--space-badge: 0.5em 1.25em;
+	}
+	&-small {
+		--space-badge: 0 0.5em;
+	}
+	&-success {
+		--bg-badge: var(--success);
+	}
+	&-danger {
+		--bg-badge: var(--danger);
+	}
+	&-warning {
+		--bg-badge: var(--warning);
+	}
+}
