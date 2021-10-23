@@ -1,4 +1,4 @@
-const {src, dest} = require('gulp');
+const { src, dest } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourceMaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
@@ -41,7 +41,7 @@ const compile = () => {
 const minify = () => {
 	return src(['dist/css/**/*.css', '!dist/css/**/*.min.css'])
 		.pipe(postcss([cssnano()]))
-		.pipe(rename({suffix: '.min'}))
+		.pipe(rename({ suffix: '.min' }))
 		.pipe(dest('dist/css'));
 };
 
