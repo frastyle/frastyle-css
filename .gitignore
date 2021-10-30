@@ -10,6 +10,7 @@
 /dist/css/themes
 /dist/js
 /src/themes
+/test
 
 # Ignore file
 *.zip

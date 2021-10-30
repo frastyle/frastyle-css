@@ -16,7 +16,6 @@ const compile = () => {
 	};
 	return (
 		src('src/**/*.scss')
-			.pipe(sourceMaps.init())
 			.pipe(sass(sassConfig).on('error', sass.logError))
 			.pipe(postcss([autoprefixer()]))
 			.pipe(
