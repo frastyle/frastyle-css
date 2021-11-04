@@ -1,3 +1,4 @@
+<br>
 <p align="center"><img width="100"src="https://raw.githubusercontent.com/bagasnur/frastyle-resource/main/branding/frastyle-icon.png"></p>
 
 <h1 align="center"> ✈️ Frastyle Framework v0.2.0 </h1>
