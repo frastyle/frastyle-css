@@ -1,6 +1,6 @@
 {
 	"name": "frastyle-css",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Frastyle Framework merupakan sebuah framework Cascading Style Sheets yang dibuat di Indonesia untuk dapat membantu developer dalam mengembangkan antarmuka website Modern dan Responsif. Didukung dengan dokumentasi bahasa Indonesia.",
 	"author": "Bagas Nur <hello.bagasnur@gmail.com> (https://bagasnur.my.id)",
 	"license": "MIT",
@@ -54,12 +54,11 @@
 		"gulp-postcss": "8.0.0",
 		"gulp-rename": "^2.0.0",
 		"gulp-sass": "^5.0.0",
-		"gulp-sourcemaps": "^3.0.0",
 		"prettier": "2.3.2",
 		"sass": "^1.35.1"
 	},
 	"directories": {
 		"test": "test"
 	},
-	"dependencies": {}
+	"packageManager": "yarn@3.1.0"
 }

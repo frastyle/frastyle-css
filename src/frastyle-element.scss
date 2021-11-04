@@ -1,0 +1,38 @@
+//	© 2021 Frastyle CSS Framework v0.2.0.
+//	Made in Indonesia and licensed under MIT License.
+//	Author: Bagas Nur P.
+
+//  ELEMENT FRASTYLE CSS FRAMEWORK
+
+//  # CSS Reset #
+//  Use browser resets
+@use 'resets';
+
+//  Set Typography Style
+@use 'typography/typography';
+
+//  Set Elements Style
+@use 'elements/button';
+@use 'elements/code';
+@use 'elements/forms';
+@use 'elements/lists';
+@use 'elements/quotation';
+@use 'elements/table';
+
+//  Set Components Style
+@use 'components/alert';
+@use 'components/badge';
+@use 'components/breadcrumbs';
+@use 'components/card';
+
+//  Set Utilities Style
+@use 'utilities/color';
+@use 'utilities/shadows';
+
+//  Root variables
+:root {
+	--success: hsl(130, 75%, 45%);
+	--warning: hsl(40, 90%, 55%);
+	--danger: hsl(0, 75%, 55%);
+	--info: hsl(200, 75%, 45%);
+}
