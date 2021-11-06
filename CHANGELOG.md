@@ -1,6 +1,6 @@
 # Catatan Perubahan 🕖 Frastyle Framework
 
-## [0.2.0](https://github.com/frastyle/frastyle-css/releases/tag/v0.2.0) (4 November 2021)
+## [0.2.0](https://github.com/frastyle/frastyle-css/releases/tag/v0.2.0) (6 November 2021)
 
 ### Penambahan
 
