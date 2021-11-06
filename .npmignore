@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+/package-lock.json
+
+# Ignore folder
+build/
+dist/js
+themes/
+test/
+
+# Ignore file
+*.zip
+*.rar
+/gulpfile.js
+/CHANGELOG.md
+/CODE_OF_CONDUCT.md
+
+# Ignore misc
+.*

@@ -1,7 +1,7 @@
 # Ignore Folder:
+.yarn/*
 build
 node_modules
-coverage
 
 # Ignore File:
 *.min.css
