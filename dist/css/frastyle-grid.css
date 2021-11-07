@@ -416,7 +416,7 @@ section,
 .mt-0,
 .my-0,
 .m-0 {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .mt-1,
@@ -476,7 +476,7 @@ section,
 .mr-0,
 .mx-0,
 .m-0 {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .mr-1,
@@ -536,7 +536,7 @@ section,
 .mb-0,
 .my-0,
 .m-0 {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .mb-1,
@@ -596,7 +596,7 @@ section,
 .ml-0,
 .mx-0,
 .m-0 {
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .ml-1,
@@ -668,7 +668,7 @@ section,
 .pt-0,
 .py-0,
 .p-0 {
-	padding-top: 0px;
+	padding-top: 0;
 }
 
 .pt-1,
@@ -728,7 +728,7 @@ section,
 .pr-0,
 .px-0,
 .p-0 {
-	padding-right: 0px;
+	padding-right: 0;
 }
 
 .pr-1,
@@ -788,7 +788,7 @@ section,
 .pb-0,
 .py-0,
 .p-0 {
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
 
 .pb-1,
@@ -848,7 +848,7 @@ section,
 .pl-0,
 .px-0,
 .p-0 {
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 .pl-1,
@@ -1190,7 +1190,7 @@ section,
 	.mt-s-0,
 	.my-s-0,
 	.m-s-0 {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 
 	.mt-s-1,
@@ -1250,7 +1250,7 @@ section,
 	.mr-s-0,
 	.mx-s-0,
 	.m-s-0 {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.mr-s-1,
@@ -1310,7 +1310,7 @@ section,
 	.mb-s-0,
 	.my-s-0,
 	.m-s-0 {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 
 	.mb-s-1,
@@ -1370,7 +1370,7 @@ section,
 	.ml-s-0,
 	.mx-s-0,
 	.m-s-0 {
-		margin-left: 0px;
+		margin-left: 0;
 	}
 
 	.ml-s-1,
@@ -1442,7 +1442,7 @@ section,
 	.pt-s-0,
 	.py-s-0,
 	.p-s-0 {
-		padding-top: 0px;
+		padding-top: 0;
 	}
 
 	.pt-s-1,
@@ -1502,7 +1502,7 @@ section,
 	.pr-s-0,
 	.px-s-0,
 	.p-s-0 {
-		padding-right: 0px;
+		padding-right: 0;
 	}
 
 	.pr-s-1,
@@ -1562,7 +1562,7 @@ section,
 	.pb-s-0,
 	.py-s-0,
 	.p-s-0 {
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
 
 	.pb-s-1,
@@ -1622,7 +1622,7 @@ section,
 	.pl-s-0,
 	.px-s-0,
 	.p-s-0 {
-		padding-left: 0px;
+		padding-left: 0;
 	}
 
 	.pl-s-1,
@@ -1965,7 +1965,7 @@ section,
 	.mt-m-0,
 	.my-m-0,
 	.m-m-0 {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 
 	.mt-m-1,
@@ -2025,7 +2025,7 @@ section,
 	.mr-m-0,
 	.mx-m-0,
 	.m-m-0 {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.mr-m-1,
@@ -2085,7 +2085,7 @@ section,
 	.mb-m-0,
 	.my-m-0,
 	.m-m-0 {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 
 	.mb-m-1,
@@ -2145,7 +2145,7 @@ section,
 	.ml-m-0,
 	.mx-m-0,
 	.m-m-0 {
-		margin-left: 0px;
+		margin-left: 0;
 	}
 
 	.ml-m-1,
@@ -2217,7 +2217,7 @@ section,
 	.pt-m-0,
 	.py-m-0,
 	.p-m-0 {
-		padding-top: 0px;
+		padding-top: 0;
 	}
 
 	.pt-m-1,
@@ -2277,7 +2277,7 @@ section,
 	.pr-m-0,
 	.px-m-0,
 	.p-m-0 {
-		padding-right: 0px;
+		padding-right: 0;
 	}
 
 	.pr-m-1,
@@ -2337,7 +2337,7 @@ section,
 	.pb-m-0,
 	.py-m-0,
 	.p-m-0 {
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
 
 	.pb-m-1,
@@ -2397,7 +2397,7 @@ section,
 	.pl-m-0,
 	.px-m-0,
 	.p-m-0 {
-		padding-left: 0px;
+		padding-left: 0;
 	}
 
 	.pl-m-1,
@@ -2740,7 +2740,7 @@ section,
 	.mt-l-0,
 	.my-l-0,
 	.m-l-0 {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 
 	.mt-l-1,
@@ -2800,7 +2800,7 @@ section,
 	.mr-l-0,
 	.mx-l-0,
 	.m-l-0 {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.mr-l-1,
@@ -2860,7 +2860,7 @@ section,
 	.mb-l-0,
 	.my-l-0,
 	.m-l-0 {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 
 	.mb-l-1,
@@ -2920,7 +2920,7 @@ section,
 	.ml-l-0,
 	.mx-l-0,
 	.m-l-0 {
-		margin-left: 0px;
+		margin-left: 0;
 	}
 
 	.ml-l-1,
@@ -2992,7 +2992,7 @@ section,
 	.pt-l-0,
 	.py-l-0,
 	.p-l-0 {
-		padding-top: 0px;
+		padding-top: 0;
 	}
 
 	.pt-l-1,
@@ -3052,7 +3052,7 @@ section,
 	.pr-l-0,
 	.px-l-0,
 	.p-l-0 {
-		padding-right: 0px;
+		padding-right: 0;
 	}
 
 	.pr-l-1,
@@ -3112,7 +3112,7 @@ section,
 	.pb-l-0,
 	.py-l-0,
 	.p-l-0 {
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
 
 	.pb-l-1,
@@ -3172,7 +3172,7 @@ section,
 	.pl-l-0,
 	.px-l-0,
 	.p-l-0 {
-		padding-left: 0px;
+		padding-left: 0;
 	}
 
 	.pl-l-1,
@@ -3519,7 +3519,7 @@ section,
 	.mt-xl-0,
 	.my-xl-0,
 	.m-xl-0 {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 
 	.mt-xl-1,
@@ -3579,7 +3579,7 @@ section,
 	.mr-xl-0,
 	.mx-xl-0,
 	.m-xl-0 {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.mr-xl-1,
@@ -3639,7 +3639,7 @@ section,
 	.mb-xl-0,
 	.my-xl-0,
 	.m-xl-0 {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 
 	.mb-xl-1,
@@ -3699,7 +3699,7 @@ section,
 	.ml-xl-0,
 	.mx-xl-0,
 	.m-xl-0 {
-		margin-left: 0px;
+		margin-left: 0;
 	}
 
 	.ml-xl-1,
@@ -3771,7 +3771,7 @@ section,
 	.pt-xl-0,
 	.py-xl-0,
 	.p-xl-0 {
-		padding-top: 0px;
+		padding-top: 0;
 	}
 
 	.pt-xl-1,
@@ -3831,7 +3831,7 @@ section,
 	.pr-xl-0,
 	.px-xl-0,
 	.p-xl-0 {
-		padding-right: 0px;
+		padding-right: 0;
 	}
 
 	.pr-xl-1,
@@ -3891,7 +3891,7 @@ section,
 	.pb-xl-0,
 	.py-xl-0,
 	.p-xl-0 {
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
 
 	.pb-xl-1,
@@ -3951,7 +3951,7 @@ section,
 	.pl-xl-0,
 	.px-xl-0,
 	.p-xl-0 {
-		padding-left: 0px;
+		padding-left: 0;
 	}
 
 	.pl-xl-1,
