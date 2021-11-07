@@ -24,7 +24,6 @@ select {
 	&.required,
 	&.invalid {
 		--border-input: 1px solid var(--danger);
-		&:focus,
 		&:focus {
 			--focus-input: 0 0 2px 2px var(--danger);
 		}
@@ -97,11 +96,11 @@ input[type='radio'] {
 
 input[type='color'] {
 	width: 100%;
-	padding: var(--space-input, 0px);
+	padding: var(--space-input, 0);
 }
 
 input[type='color' i]::-webkit-color-swatch-wrapper {
-	padding: var(--space-input, 0px);
+	padding: var(--space-input, 0);
 	border-radius: var(--corner-input, 0);
 	outline: none;
 }

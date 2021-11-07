@@ -12,6 +12,8 @@ $gap: variables.$gap;
 $gap-sm: variables.$gap-small;
 $gap-md: variables.$gap-medium;
 $gap-lg: variables.$gap-large;
+// Breakpoint width < 768px
+$bp-lt-s: map-get($breakpoints, 's') - 1px;
 
 //	GRIDS
 //	Avaliable Customs Variable:
@@ -33,7 +35,7 @@ $gap-lg: variables.$gap-large;
 	}
 }
 //  Container for width < 768px
-@media screen and (max-width: map-get($breakpoints, 's') - 1px) {
+@media screen and (max-width: $bp-lt-s) {
 	.container,
 	.container-full {
 		padding-left: 16px;
@@ -61,7 +63,7 @@ section,
 	}
 	//  Set gaps none
 	.gap#{$bp}-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 	//  Set gaps small
 	.gap#{$bp}-small {

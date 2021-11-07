@@ -20,6 +20,18 @@
 	--dark-3: #435056;
 	--dark-4: #5b6a71;
 	--dark-5: #73848c;
+	--shadow: 0 16px 20px -8px rgba(0, 0, 0, 0.3),
+		0 8px 32px -8px rgba(0, 0, 0, 0.1);
+	--shadow-small: 0 8px 20px -8px rgba(0, 0, 0, 0.3),
+		0 4px 8px -4px rgba(0, 0, 0, 0.1);
+	--shadow-large: 0 24px 32px -8px rgba(0, 0, 0, 0.2),
+		0 12px 20px -8px rgba(0, 0, 0, 0.1);
+	--shadow-dark: 0 16px 20px -8px rgba(0, 0, 0, 0.5),
+		0 8px 32px -8px rgba(0, 0, 0, 0.25);
+	--shadow-dark-small: 0 8px 20px -8px rgba(0, 0, 0, 0.5),
+		0 4px 8px -4px rgba(0, 0, 0, 0.25);
+	--shadow-dark-large: 0 24px 32px -8px rgba(0, 0, 0, 0.5),
+		0 12px 20px -8px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -192,7 +204,7 @@ section,
 }
 
 .gap-none {
-	--gap: 0px;
+	--gap: 0;
 }
 
 .gap-small {
@@ -971,7 +983,7 @@ section,
 	}
 
 	.gap-s-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-s-small {
@@ -1746,7 +1758,7 @@ section,
 	}
 
 	.gap-m-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-m-small {
@@ -2521,7 +2533,7 @@ section,
 	}
 
 	.gap-l-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-l-small {
@@ -3300,7 +3312,7 @@ section,
 	}
 
 	.gap-xl-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-xl-small {
