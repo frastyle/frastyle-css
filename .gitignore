@@ -1,17 +1,27 @@
 # Ignore folder
+/build
 /node_modules
-build/
-dist/js
-themes/
-test/
+/test
 
 # Ignore file
-/package-lock.json
 .npmignore
+/package-lock.json
 
 # Ignore misc
-.vscode/
-.yarn/*
+.*.swp
+._*
+.DS_Store
+.git
+.hg
+.npmrc
+.lock-wscript
+.svn
+.vscode
+.wafpickle-*
+.yarn
+config.gypi
+CVS
+npm-debug.log
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
