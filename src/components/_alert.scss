@@ -8,7 +8,7 @@
 //	--corner-alert
 
 %alert {
-	background: var(--bg-alert, hsl(219, 69%, 90%));
+	background: var(--bg-alert, #d4e0f7);
 	color: var(--text-alert, var(--primary));
 	margin-bottom: 1em;
 	padding: var(--space-alert, 8px 24px);
@@ -45,22 +45,22 @@
 	}
 	&-success {
 		@extend %alert;
-		--bg-alert: hsl(130, 90%, 95%);
+		--bg-alert: #e7feeb;
 		--text-alert: var(--success);
 	}
 	&-danger {
 		@extend %alert;
-		--bg-alert: hsl(0, 70%, 95%);
+		--bg-alert: #fbe9e9;
 		--text-alert: var(--danger);
 	}
 	&-warning {
 		@extend %alert;
-		--bg-alert: hsl(45, 90%, 95%);
+		--bg-alert: #fef8e7;
 		--text-alert: var(--warning);
 	}
 	&-info {
 		@extend %alert;
-		--bg-alert: hsl(200, 75%, 95%);
+		--bg-alert: #e9f5fc;
 		--text-alert: var(--info);
 	}
 }

@@ -102,7 +102,7 @@ p {
 }
 mark,
 .mark {
-	background: var(--bg-mark, #ffea8080);
+	background: var(--bg-mark, hsla(50, 100%, 75%, 0.5));
 	padding: var(--corner-mark, 0.25em);
 }
 small {

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800');
 
 :root {
-	--link: hsl(200, 75%, 45%);
+	--link: #1d8fc9;
 	--white: #ffffff;
 	--light: #f2f2f2;
 	--light-1: #e4e6e7;
@@ -20,6 +20,18 @@
 	--dark-3: #435056;
 	--dark-4: #5b6a71;
 	--dark-5: #73848c;
+	--shadow: 0 16px 20px -8px rgba(0, 0, 0, 0.3),
+		0 8px 32px -8px rgba(0, 0, 0, 0.1);
+	--shadow-small: 0 8px 20px -8px rgba(0, 0, 0, 0.3),
+		0 4px 8px -4px rgba(0, 0, 0, 0.1);
+	--shadow-large: 0 24px 32px -8px rgba(0, 0, 0, 0.2),
+		0 12px 20px -8px rgba(0, 0, 0, 0.1);
+	--shadow-dark: 0 16px 20px -8px rgba(0, 0, 0, 0.5),
+		0 8px 32px -8px rgba(0, 0, 0, 0.25);
+	--shadow-dark-small: 0 8px 20px -8px rgba(0, 0, 0, 0.5),
+		0 4px 8px -4px rgba(0, 0, 0, 0.25);
+	--shadow-dark-large: 0 24px 32px -8px rgba(0, 0, 0, 0.5),
+		0 12px 20px -8px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -192,7 +204,7 @@ section,
 }
 
 .gap-none {
-	--gap: 0px;
+	--gap: 0;
 }
 
 .gap-small {
@@ -474,7 +486,7 @@ p {
 
 mark,
 .mark {
-	background: var(--bg-mark, #ffea8080);
+	background: var(--bg-mark, rgba(255, 234, 128, 0.5));
 	padding: var(--corner-mark, 0.25em);
 }
 
@@ -609,7 +621,7 @@ var,
 kbd,
 code,
 pre {
-	background: var(--bg-code, #d6dadb60);
+	background: var(--bg-code, rgba(215, 218, 219, 0.375));
 	color: var(--text-code);
 	font: 1rem/1.25 Consolas, 'Courier New', monospace;
 	padding: var(--space-code, 0.125em 0.5em);
@@ -624,7 +636,7 @@ pre {
 
 pre code,
 pre var {
-	--bg-code: #ffffff00;
+	--bg-code: hsla(0, 0%, 100%, 0);
 	--space-code: 0;
 }
 
@@ -656,7 +668,7 @@ pre::-webkit-scrollbar-corner {
 input:not([type='button'], [type='submit'], [type='reset']),
 textarea,
 select {
-	background: var(--bg-input, #ffffff1a);
+	background: var(--bg-input, rgba(255, 255, 255, 0.1));
 	color: var(--text-input);
 	font: 1rem 'Poppins';
 	margin-bottom: 0.5em;
@@ -682,16 +694,10 @@ select.invalid {
 }
 
 input:not([type='button'], [type='submit'], [type='reset']).required:focus,
-input:not([type='button'], [type='submit'], [type='reset']).required:focus,
-input:not([type='button'], [type='submit'], [type='reset']).invalid:focus,
 input:not([type='button'], [type='submit'], [type='reset']).invalid:focus,
 textarea.required:focus,
-textarea.required:focus,
-textarea.invalid:focus,
 textarea.invalid:focus,
 select.required:focus,
-select.required:focus,
-select.invalid:focus,
 select.invalid:focus {
 	--focus-input: 0 0 2px 2px var(--danger);
 }
@@ -729,7 +735,7 @@ textarea:disabled,
 textarea.disabled,
 select:disabled,
 select.disabled {
-	background: var(--bg-input, #ffffff80);
+	background: var(--bg-input, rgba(255, 255, 255, 0.5));
 	cursor: not-allowed;
 	opacity: 0.5;
 }
@@ -795,11 +801,11 @@ input[type='radio'] ~ label {
 
 input[type='color'] {
 	width: 100%;
-	padding: var(--space-input, 0px);
+	padding: var(--space-input, 0);
 }
 
 input[type='color' i]::-webkit-color-swatch-wrapper {
-	padding: var(--space-input, 0px);
+	padding: var(--space-input, 0);
 	border-radius: var(--corner-input, 0);
 	outline: none;
 }
@@ -823,12 +829,12 @@ select option {
 ul,
 ol {
 	padding-left: 1.5em;
-	margin: 0.25em 0em 1em;
+	margin: 0.25em 0 1em;
 }
 
 ul ul,
 ol ol {
-	margin: 0em;
+	margin: 0;
 }
 
 dt {
@@ -836,7 +842,7 @@ dt {
 }
 
 dl {
-	margin: 0.25em 0em 1em;
+	margin: 0.25em 0 1em;
 }
 
 dd {
@@ -847,7 +853,7 @@ dd {
 
 blockquote {
 	background: var(--bg-quote, var(--light));
-	margin: 0.5em 0em;
+	margin: 0.5em 0;
 	padding: var(--space-quote, 0.75em 1.5em);
 	border-radius: var(--corner-quote);
 }
@@ -872,10 +878,10 @@ td {
 }
 
 :root {
-	--success: hsl(130, 75%, 45%);
-	--warning: hsl(40, 90%, 55%);
-	--danger: hsl(0, 75%, 55%);
-	--info: hsl(200, 75%, 45%);
+	--success: #1dc939;
+	--warning: #f4af25;
+	--danger: #e23636;
+	--info: #1d8fc9;
 }
 
 @media screen and (min-width: 540px) {
@@ -944,7 +950,7 @@ td {
 	}
 
 	.gap-s-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-s-small {
@@ -1239,7 +1245,7 @@ td {
 	}
 
 	.gap-m-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-m-small {
@@ -1510,7 +1516,7 @@ td {
 	}
 
 	.gap-l-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-l-small {
@@ -1785,7 +1791,7 @@ td {
 	}
 
 	.gap-xl-none {
-		--gap: 0px;
+		--gap: 0;
 	}
 
 	.gap-xl-small {

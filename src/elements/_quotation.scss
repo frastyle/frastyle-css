@@ -8,7 +8,7 @@
 
 blockquote {
 	background: var(--bg-quote, var(--light));
-	margin: 0.5em 0em;
+	margin: 0.5em 0;
 	padding: var(--space-quote, 0.75em 1.5em);
 	border-radius: var(--corner-quote);
 	& > :last-child {

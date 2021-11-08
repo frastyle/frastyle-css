@@ -18,7 +18,12 @@ $scale-size: 4px !default; // scale size in common devices;
 	@each $initSpace, $valSpace in $spaces {
 		@each $i, $side in $sides {
 			@if $i == 'l' or $i == 'r' {
-				@for $n from 0 through 9 {
+				.#{$initSpace}#{$i}#{$bp}-0,
+				.#{$initSpace}x#{$bp}-0,
+				.#{$initSpace}#{$bp}-0 {
+					#{$valSpace}-#{$side}: 0;
+				}
+				@for $n from 1 through 9 {
 					.#{$initSpace}#{$i}#{$bp}-#{$n},
 					.#{$initSpace}x#{$bp}-#{$n},
 					.#{$initSpace}#{$bp}-#{$n} {
@@ -27,7 +32,12 @@ $scale-size: 4px !default; // scale size in common devices;
 				}
 			}
 			@if $i == 't' or $i == 'b' {
-				@for $n from 0 through 9 {
+				.#{$initSpace}#{$i}#{$bp}-0,
+				.#{$initSpace}y#{$bp}-0,
+				.#{$initSpace}#{$bp}-0 {
+					#{$valSpace}-#{$side}: 0;
+				}
+				@for $n from 1 through 9 {
 					.#{$initSpace}#{$i}#{$bp}-#{$n},
 					.#{$initSpace}y#{$bp}-#{$n},
 					.#{$initSpace}#{$bp}-#{$n} {

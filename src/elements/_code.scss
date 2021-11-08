@@ -7,7 +7,7 @@
 //	--bg-code, --text-code, --space-code, --corner-code
 
 %code-default {
-	background: var(--bg-code, #d6dadb60);
+	background: var(--bg-code, hsla(195, 5%, 85%, 0.375));
 	color: var(--text-code);
 	font: 1rem/1.25 Consolas, 'Courier New', monospace;
 	padding: var(--space-code, 0.125em 0.5em);
@@ -23,7 +23,7 @@ pre {
 	//	Code/Var Tag Inside Preformat
 	& code,
 	& var {
-		--bg-code: #ffffff00;
+		--bg-code: hsla(0, 0%, 100%, 0);
 		--space-code: 0;
 	}
 	//	Width Scroll
@@ -44,11 +44,11 @@ pre {
 	}
 	//	Handle on Hover Scroll
 	&::-webkit-scrollbar-thumb:hover {
-		background: hsl(0, 0%, 65%);
+		background: #a6a6a6;
 	}
 	//	Resize Corner Scroll
 	&::-webkit-scrollbar-corner {
-		background: hsla(0, 0%, 65%);
+		background: #a6a6a6;
 		border-radius: var(--corner-code);
 	}
 }

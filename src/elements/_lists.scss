@@ -10,12 +10,12 @@
 ul,
 ol {
 	padding-left: 1.5em;
-	margin: 0.25em 0em 1em;
+	margin: 0.25em 0 1em;
 }
 
 ul ul,
 ol ol {
-	margin: 0em;
+	margin: 0;
 }
 
 //	Definition List
@@ -24,7 +24,7 @@ dt {
 }
 
 dl {
-	margin: 0.25em 0em 1em;
+	margin: 0.25em 0 1em;
 }
 
 dd {

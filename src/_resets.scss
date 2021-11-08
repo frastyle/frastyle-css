@@ -7,6 +7,8 @@
 
 //  Variable declaration
 $breakpoints: variables.$breakpoints;
+// Breakpoint width < 768px
+$bp-lt-s: map-get($breakpoints, 's') - 1px;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800');
 
@@ -30,7 +32,7 @@ body {
 	margin: 0;
 }
 
-@media screen and (max-width: map-get($breakpoints, 's') - 1px) {
+@media screen and (max-width: $bp-lt-s) {
 	html {
 		font-size: 14px;
 	}
