@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800');
 
 :root {
-	--link: hsl(200, 75%, 45%);
+	--link: #1d8fc9;
 	--white: #ffffff;
 	--light: #f2f2f2;
 	--light-1: #e4e6e7;
@@ -486,7 +486,7 @@ p {
 
 mark,
 .mark {
-	background: var(--bg-mark, #ffea8080);
+	background: var(--bg-mark, rgba(255, 234, 128, 0.5));
 	padding: var(--corner-mark, 0.25em);
 }
 
@@ -621,7 +621,7 @@ var,
 kbd,
 code,
 pre {
-	background: var(--bg-code, #d6dadb60);
+	background: var(--bg-code, rgba(215, 218, 219, 0.375));
 	color: var(--text-code);
 	font: 1rem/1.25 Consolas, 'Courier New', monospace;
 	padding: var(--space-code, 0.125em 0.5em);
@@ -636,7 +636,7 @@ pre {
 
 pre code,
 pre var {
-	--bg-code: #ffffff00;
+	--bg-code: hsla(0, 0%, 100%, 0);
 	--space-code: 0;
 }
 
@@ -668,7 +668,7 @@ pre::-webkit-scrollbar-corner {
 input:not([type='button'], [type='submit'], [type='reset']),
 textarea,
 select {
-	background: var(--bg-input, #ffffff1a);
+	background: var(--bg-input, rgba(255, 255, 255, 0.1));
 	color: var(--text-input);
 	font: 1rem 'Poppins';
 	margin-bottom: 0.5em;
@@ -735,7 +735,7 @@ textarea:disabled,
 textarea.disabled,
 select:disabled,
 select.disabled {
-	background: var(--bg-input, #ffffff80);
+	background: var(--bg-input, rgba(255, 255, 255, 0.5));
 	cursor: not-allowed;
 	opacity: 0.5;
 }
@@ -963,22 +963,22 @@ td {
 }
 
 .alert-success {
-	--bg-alert: hsl(130, 90%, 95%);
+	--bg-alert: #e7feeb;
 	--text-alert: var(--success);
 }
 
 .alert-danger {
-	--bg-alert: hsl(0, 70%, 95%);
+	--bg-alert: #fbe9e9;
 	--text-alert: var(--danger);
 }
 
 .alert-warning {
-	--bg-alert: hsl(45, 90%, 95%);
+	--bg-alert: #fef8e7;
 	--text-alert: var(--warning);
 }
 
 .alert-info {
-	--bg-alert: hsl(200, 75%, 95%);
+	--bg-alert: #e9f5fc;
 	--text-alert: var(--info);
 }
 
@@ -1049,22 +1049,22 @@ td {
 }
 
 .card-success {
-	--bg-card: hsl(130, 90%, 95%);
+	--bg-card: #e7feeb;
 	--border-card: 1px solid var(--success);
 }
 
 .card-warning {
-	--bg-card: hsl(45, 90%, 95%);
+	--bg-card: #fef8e7;
 	--border-card: 1px solid var(--warning);
 }
 
 .card-danger {
-	--bg-card: hsl(0, 70%, 95%);
+	--bg-card: #fbe9e9;
 	--border-card: 1px solid var(--danger);
 }
 
 .card-info {
-	--bg-card: hsl(200, 75%, 95%);
+	--bg-card: #e9f5fc;
 	--border-card: 1px solid var(--info);
 }
 
@@ -1837,10 +1837,10 @@ td {
 }
 
 :root {
-	--success: hsl(130, 75%, 45%);
-	--warning: hsl(40, 90%, 55%);
-	--danger: hsl(0, 75%, 55%);
-	--info: hsl(200, 75%, 45%);
+	--success: #1dc939;
+	--warning: #f4af25;
+	--danger: #e23636;
+	--info: #1d8fc9;
 }
 
 .button-info,
@@ -1852,22 +1852,22 @@ td {
 
 .button-success {
 	--bg-button: var(--success);
-	--bg-button-hover: hsl(130, 70%, 50%);
+	--bg-button-hover: #26d944;
 }
 
 .button-warning {
 	--bg-button: var(--warning);
-	--bg-button-hover: hsl(40, 93%, 60%);
+	--bg-button-hover: #f8b93a;
 }
 
 .button-danger {
 	--bg-button: var(--danger);
-	--bg-button-hover: hsl(0, 78%, 60%);
+	--bg-button-hover: #e94949;
 }
 
 .button-info {
 	--bg-button: var(--info);
-	--bg-button-hover: hsl(200, 75%, 50%);
+	--bg-button-hover: #209fdf;
 }
 
 .form-input label {

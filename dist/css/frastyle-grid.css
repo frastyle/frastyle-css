@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800');
 
 :root {
-	--link: hsl(200, 75%, 45%);
+	--link: #1d8fc9;
 	--white: #ffffff;
 	--light: #f2f2f2;
 	--light-1: #e4e6e7;

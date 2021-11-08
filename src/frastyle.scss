@@ -44,10 +44,10 @@ $breakpoints: variables.$breakpoints;
 
 //  Root variables
 :root {
-	--success: hsl(130, 75%, 45%);
-	--warning: hsl(40, 90%, 55%);
-	--danger: hsl(0, 75%, 55%);
-	--info: hsl(200, 75%, 45%);
+	--success: #1dc939;
+	--warning: #f4af25;
+	--danger: #e23636;
+	--info: #1d8fc9;
 }
 
 //  Default Style Button
@@ -57,22 +57,22 @@ $breakpoints: variables.$breakpoints;
 .button {
 	&-success {
 		--bg-button: var(--success);
-		--bg-button-hover: hsl(130, 70%, 50%);
+		--bg-button-hover: #26d944;
 		@extend %text-white;
 	}
 	&-warning {
 		--bg-button: var(--warning);
-		--bg-button-hover: hsl(40, 93%, 60%);
+		--bg-button-hover: #f8b93a;
 		@extend %text-white;
 	}
 	&-danger {
 		--bg-button: var(--danger);
-		--bg-button-hover: hsl(0, 78%, 60%);
+		--bg-button-hover: #e94949;
 		@extend %text-white;
 	}
 	&-info {
 		--bg-button: var(--info);
-		--bg-button-hover: hsl(200, 75%, 50%);
+		--bg-button-hover: #209fdf;
 		@extend %text-white;
 	}
 }
