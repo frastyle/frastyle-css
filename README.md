@@ -15,6 +15,7 @@
 <br>
 ![jsDelivr hits (NPM)](https://img.shields.io/jsdelivr/npm/hy/frastyle-css?color=orange&style=flat-square)
 ![Install NPM](https://img.shields.io/npm/dt/frastyle-css?style=flat-square)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/frastyle/frastyle-css?style=flat-square)
 ![Snyk Vulnerabilities NPM](https://img.shields.io/snyk/vulnerabilities/npm/frastyle-css?style=flat-square)
 
 </div>
