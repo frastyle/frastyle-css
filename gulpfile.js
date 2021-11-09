@@ -9,7 +9,7 @@ const comment = require('gulp-header-comment');
 const rename = require('gulp-rename');
 
 const compile = () => {
-	var sassConfig = {
+	let sassConfig = {
 		outputStyle: 'expanded',
 		includePaths: ['./node_modules'],
 	};
