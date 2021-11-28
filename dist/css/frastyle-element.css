@@ -196,7 +196,7 @@ input[type='submit']:focus,
 input[type='submit'].active {
 	background: var(--bg-button-hover, var(--bg-button, #d6dadb));
 	color: var(--text-button-hover, var(--text-button));
-	border: var(--border-button-hover, var(--color-button));
+	border: var(--border-button-hover, var(--border-button));
 }
 
 button:disabled,
@@ -262,8 +262,8 @@ code,
 pre {
 	background: var(--bg-code, rgba(215, 218, 219, 0.375));
 	color: var(--text-code);
-	font: 1rem/1.25 Consolas, 'Courier New', monospace;
-	padding: var(--space-code, 0.125em 0.5em);
+	font: 1rem/1.25 'Courier New', monospace;
+	padding: var(--space-code, 0.125em 0.5em 0.15em);
 	border-radius: var(--corner-code);
 }
 
@@ -512,7 +512,7 @@ table {
 
 th,
 td {
-	border: var(--border-table, 0.1rem solid var(--light-3));
+	border: var(--border-table, 1px solid var(--light-3, #0d0d0d));
 	padding: var(--space-table, 0.5rem 1rem);
 }
 
@@ -630,7 +630,7 @@ td {
 }
 
 .breadcrumb > li:not(:last-child)::after {
-	content: var(--content-breadcrumb, '/');
+	content: var(--divider-breadcrumb, '/');
 	margin: 0 var(--space-breadcrumb, 4px);
 }
 
@@ -683,243 +683,243 @@ td {
 }
 
 .primary {
-	color: var(--primary) !important;
+	color: var(--primary);
 }
 
 .bg-primary {
-	background: var(--primary) !important;
+	background: var(--primary);
 }
 
 .outline-primary {
-	border: 2px solid var(--primary) !important;
+	border: 2px solid var(--primary);
 }
 
 .secondary {
-	color: var(--secondary) !important;
+	color: var(--secondary);
 }
 
 .bg-secondary {
-	background: var(--secondary) !important;
+	background: var(--secondary);
 }
 
 .outline-secondary {
-	border: 2px solid var(--secondary) !important;
+	border: 2px solid var(--secondary);
 }
 
 .success {
-	color: var(--success) !important;
+	color: var(--success);
 }
 
 .bg-success {
-	background: var(--success) !important;
+	background: var(--success);
 }
 
 .outline-success {
-	border: 2px solid var(--success) !important;
+	border: 2px solid var(--success);
 }
 
 .warning {
-	color: var(--warning) !important;
+	color: var(--warning);
 }
 
 .bg-warning {
-	background: var(--warning) !important;
+	background: var(--warning);
 }
 
 .outline-warning {
-	border: 2px solid var(--warning) !important;
+	border: 2px solid var(--warning);
 }
 
 .danger {
-	color: var(--danger) !important;
+	color: var(--danger);
 }
 
 .bg-danger {
-	background: var(--danger) !important;
+	background: var(--danger);
 }
 
 .outline-danger {
-	border: 2px solid var(--danger) !important;
+	border: 2px solid var(--danger);
 }
 
 .info {
-	color: var(--info) !important;
+	color: var(--info);
 }
 
 .bg-info {
-	background: var(--info) !important;
+	background: var(--info);
 }
 
 .outline-info {
-	border: 2px solid var(--info) !important;
+	border: 2px solid var(--info);
 }
 
 .dark {
-	color: var(--dark) !important;
+	color: var(--dark);
 }
 
 .bg-dark {
-	background: var(--dark) !important;
+	background: var(--dark);
 }
 
 .outline-dark {
-	border: 2px solid var(--dark) !important;
+	border: 2px solid var(--dark);
 }
 
 .dark-1 {
-	color: var(--dark-1) !important;
+	color: var(--dark-1);
 }
 
 .bg-dark-1 {
-	background: var(--dark-1) !important;
+	background: var(--dark-1);
 }
 
 .outline-dark-1 {
-	border: 2px solid var(--dark-1) !important;
+	border: 2px solid var(--dark-1);
 }
 
 .dark-2 {
-	color: var(--dark-2) !important;
+	color: var(--dark-2);
 }
 
 .bg-dark-2 {
-	background: var(--dark-2) !important;
+	background: var(--dark-2);
 }
 
 .outline-dark-2 {
-	border: 2px solid var(--dark-2) !important;
+	border: 2px solid var(--dark-2);
 }
 
 .dark-3 {
-	color: var(--dark-3) !important;
+	color: var(--dark-3);
 }
 
 .bg-dark-3 {
-	background: var(--dark-3) !important;
+	background: var(--dark-3);
 }
 
 .outline-dark-3 {
-	border: 2px solid var(--dark-3) !important;
+	border: 2px solid var(--dark-3);
 }
 
 .dark-4 {
-	color: var(--dark-4) !important;
+	color: var(--dark-4);
 }
 
 .bg-dark-4 {
-	background: var(--dark-4) !important;
+	background: var(--dark-4);
 }
 
 .outline-dark-4 {
-	border: 2px solid var(--dark-4) !important;
+	border: 2px solid var(--dark-4);
 }
 
 .dark-5 {
-	color: var(--dark-5) !important;
+	color: var(--dark-5);
 }
 
 .bg-dark-5 {
-	background: var(--dark-5) !important;
+	background: var(--dark-5);
 }
 
 .outline-dark-5 {
-	border: 2px solid var(--dark-5) !important;
+	border: 2px solid var(--dark-5);
 }
 
 .light {
-	color: var(--light) !important;
+	color: var(--light);
 }
 
 .bg-light {
-	background: var(--light) !important;
+	background: var(--light);
 }
 
 .outline-light {
-	border: 2px solid var(--light) !important;
+	border: 2px solid var(--light);
 }
 
 .light-1 {
-	color: var(--light-1) !important;
+	color: var(--light-1);
 }
 
 .bg-light-1 {
-	background: var(--light-1) !important;
+	background: var(--light-1);
 }
 
 .outline-light-1 {
-	border: 2px solid var(--light-1) !important;
+	border: 2px solid var(--light-1);
 }
 
 .light-2 {
-	color: var(--light-2) !important;
+	color: var(--light-2);
 }
 
 .bg-light-2 {
-	background: var(--light-2) !important;
+	background: var(--light-2);
 }
 
 .outline-light-2 {
-	border: 2px solid var(--light-2) !important;
+	border: 2px solid var(--light-2);
 }
 
 .light-3 {
-	color: var(--light-3) !important;
+	color: var(--light-3);
 }
 
 .bg-light-3 {
-	background: var(--light-3) !important;
+	background: var(--light-3);
 }
 
 .outline-light-3 {
-	border: 2px solid var(--light-3) !important;
+	border: 2px solid var(--light-3);
 }
 
 .light-4 {
-	color: var(--light-4) !important;
+	color: var(--light-4);
 }
 
 .bg-light-4 {
-	background: var(--light-4) !important;
+	background: var(--light-4);
 }
 
 .outline-light-4 {
-	border: 2px solid var(--light-4) !important;
+	border: 2px solid var(--light-4);
 }
 
 .light-5 {
-	color: var(--light-5) !important;
+	color: var(--light-5);
 }
 
 .bg-light-5 {
-	background: var(--light-5) !important;
+	background: var(--light-5);
 }
 
 .outline-light-5 {
-	border: 2px solid var(--light-5) !important;
+	border: 2px solid var(--light-5);
 }
 
 .black {
-	color: var(--black) !important;
+	color: var(--black);
 }
 
 .bg-black {
-	background: var(--black) !important;
+	background: var(--black);
 }
 
 .outline-black {
-	border: 2px solid var(--black) !important;
+	border: 2px solid var(--black);
 }
 
 .white {
-	color: var(--white) !important;
+	color: var(--white);
 }
 
 .bg-white {
-	background: var(--white) !important;
+	background: var(--white);
 }
 
 .outline-white {
-	border: 2px solid var(--white) !important;
+	border: 2px solid var(--white);
 }
 
 .shadow {

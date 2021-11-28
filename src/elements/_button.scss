@@ -32,7 +32,7 @@ input[type='submit'] {
 	&.active {
 		background: var(--bg-button-hover, var(--bg-button, #d6dadb));
 		color: var(--text-button-hover, var(--text-button));
-		border: var(--border-button-hover, var(--color-button));
+		border: var(--border-button-hover, var(--border-button));
 	}
 	//	On Disabled Button
 	&:disabled,

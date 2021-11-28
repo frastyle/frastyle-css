@@ -557,7 +557,7 @@ input[type='submit']:focus,
 input[type='submit'].active {
 	background: var(--bg-button-hover, var(--bg-button, #d6dadb));
 	color: var(--text-button-hover, var(--text-button));
-	border: var(--border-button-hover, var(--color-button));
+	border: var(--border-button-hover, var(--border-button));
 }
 
 button:disabled,
@@ -623,8 +623,8 @@ code,
 pre {
 	background: var(--bg-code, rgba(215, 218, 219, 0.375));
 	color: var(--text-code);
-	font: 1rem/1.25 Consolas, 'Courier New', monospace;
-	padding: var(--space-code, 0.125em 0.5em);
+	font: 1rem/1.25 'Courier New', monospace;
+	padding: var(--space-code, 0.125em 0.5em 0.15em);
 	border-radius: var(--corner-code);
 }
 
@@ -873,7 +873,7 @@ table {
 
 th,
 td {
-	border: var(--border-table, 0.1rem solid var(--light-3));
+	border: var(--border-table, 1px solid var(--light-3, #0d0d0d));
 	padding: var(--space-table, 0.5rem 1rem);
 }
 
@@ -882,6 +882,7 @@ td {
 	--warning: #f4af25;
 	--danger: #e23636;
 	--info: #1d8fc9;
+	--link: #1d8fc9;
 }
 
 @media screen and (min-width: 540px) {

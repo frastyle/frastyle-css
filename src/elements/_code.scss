@@ -9,8 +9,8 @@
 %code-default {
 	background: var(--bg-code, hsla(195, 5%, 85%, 0.375));
 	color: var(--text-code);
-	font: 1rem/1.25 Consolas, 'Courier New', monospace;
-	padding: var(--space-code, 0.125em 0.5em);
+	font: 1rem/1.25 'Courier New', monospace;
+	padding: var(--space-code, 0.125em 0.5em 0.15em);
 	border-radius: var(--corner-code);
 }
 

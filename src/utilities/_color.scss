@@ -12,25 +12,25 @@
 	@for $i from 0 to $n {
 		@if $i == 0 {
 			.#{$color} {
-				color: var(--#{$color}) !important;
+				color: var(--#{$color});
 			}
 			.bg-#{$color} {
-				background: var(--#{$color}) !important;
+				background: var(--#{$color});
 			}
 			.outline-#{$color} {
-				border: 2px solid var(--#{$color}) !important;
+				border: 2px solid var(--#{$color});
 			}
 		} @else {
 			@if $color != 'dark' or $color != 'light' {
 				.#{$color}-#{$i} {
-					color: var(--#{$color}-#{$i}) !important;
+					color: var(--#{$color}-#{$i});
 				}
 			}
 			.bg-#{$color}-#{$i} {
-				background: var(--#{$color}-#{$i}) !important;
+				background: var(--#{$color}-#{$i});
 			}
 			.outline-#{$color}-#{$i} {
-				border: 2px solid var(--#{$color}-#{$i}) !important;
+				border: 2px solid var(--#{$color}-#{$i});
 			}
 		}
 	}

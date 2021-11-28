@@ -4,14 +4,14 @@
 
 //	BREADCRUMBS
 //	Avaliable Customs Variable:
-//	--content-breadcrumb, --space-breadcrumb
+//	--divider-breadcrumb, --space-breadcrumb
 
 .breadcrumb {
 	display: flex;
 	list-style: none;
 	> li {
 		&:not(:last-child)::after {
-			content: var(--content-breadcrumb, '/');
+			content: var(--divider-breadcrumb, '/');
 			margin: 0 var(--space-breadcrumb, 4px);
 		}
 	}

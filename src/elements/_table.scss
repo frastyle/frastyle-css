@@ -16,6 +16,6 @@ table {
 }
 th,
 td {
-	border: var(--border-table, 0.1rem solid var(--light-3));
+	border: var(--border-table, 1px solid var(--light-3, #0d0d0d));
 	padding: var(--space-table, 0.5rem 1rem);
 }
