@@ -70,7 +70,7 @@ Pilih salah satu dari CDNs berikut untuk instalasi dan masukkan kode ke dalam ta
 
 #### Instal Manual
 
-[Unduh versi terakhir](https://github.com/frastyle/frastyle-css/releases/latest/download/frastyle-css-0.2.0.zip)
+[Unduh versi terakhir](https://github.com/frastyle/frastyle-css/releases/latest/download/frastyle-css-0.2.2.zip)
 atau clone dari repositori
 
 ```sh

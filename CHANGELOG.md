@@ -1,5 +1,29 @@
 # Catatan Perubahan 🕖 Frastyle Framework
 
+## [0.2.2](https://github.com/frastyle/frastyle-css/releases/tag/v0.2.2) (30 November 2021)
+
+### Perubahan
+
+-   Tingkatkan build versi framework ke 0.2.2
+-   Memperbaiki nilai dan nama variabel di beberapa elemen/komponen (breadcrumb, button, code, table)
+-   Memperbarui versi dukungan browser: Safari (≥11 ke ≥15), Samsung Internet (≥9 ke ≥14)
+
+### Penghapusan
+
+-   Menghapus nilai `!important` pada warna
+
+**Full Changelog**:  [`v0.2.1 -> v0.2.2`](https://github.com/frastyle/frastyle-css/compare/v0.2.1...v0.2.2)
+
+## [0.2.1](https://github.com/frastyle/frastyle-css/releases/tag/v0.2.1) (9 November 2021)
+
+### Perubahan
+
+-   Memperbaiki selektor yang terduplikasi
+-   Memperbaiki penggunan satuan panjang nol
+-   Konversi warna solid ke HEX dan warna dengan transparansi ke RGBA/HSLA
+
+**Full Changelog**:  [`v0.2.0 -> v0.2.1`](https://github.com/frastyle/frastyle-css/compare/v0.2.0...v0.2.1)
+
 ## [0.2.0](https://github.com/frastyle/frastyle-css/releases/tag/v0.2.0) (6 November 2021)
 
 ### Penambahan
@@ -11,12 +35,13 @@
 
 -   Tingkatkan build versi framework ke 0.2.0
 -   Migrasi Yarn ke versi 3.1.0
--   Readme.md
 
 ### Penghapusan
 
 -   File test framework.
 -   Plug-in source-map generator.
+
+**Full Changelog**:  [`v0.1.0 -> v0.2.0`](https://github.com/frastyle/frastyle-css/compare/v0.1.0...v0.2.0)
 
 ## [0.1.0](https://github.com/frastyle/frastyle-css/releases/tag/v0.1.0) (16 Oktober 2021)
 
