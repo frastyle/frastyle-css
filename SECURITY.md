@@ -6,7 +6,7 @@ Berikut ini merupakan versi yang didukung dengan pembaruan keamanan.
 
 | Version |     Supported      |
 | :-----: | :----------------: |
-| ≥ 0.1.x | :white_check_mark: |
+|  0.x.x  | :white_check_mark: |
 
 ## ⚠ Laporkan Masalah Keamanan dan Kerentanan
 
