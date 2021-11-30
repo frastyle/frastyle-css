@@ -1,7 +1,7 @@
 <br>
 <p align="center"><img width="100"src="https://raw.githubusercontent.com/bagasnur/frastyle-resource/main/branding/frastyle-icon.png"></p>
 
-<h1 align="center"> ✈️ Frastyle Framework v0.2.0 </h1>
+<h1 align="center"> ✈️ Frastyle Framework</h1>
 
 <p align="center"> <b>Frastyle</b> merupakan sebuah framework Cascading Style Sheets yang dibuat di Indonesia untuk dapat membantu developer dalam mengembangkan antarmuka website yang <b>Modern</b> dan <b>Responsif</b>. Didukung dengan dokumentasi bahasa Indonesia. </p>
 
@@ -17,8 +17,13 @@
 ![Install NPM](https://img.shields.io/npm/dt/frastyle-css?style=flat-square)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/frastyle/frastyle-css?style=flat-square)
 ![Snyk Vulnerabilities NPM](https://img.shields.io/snyk/vulnerabilities/npm/frastyle-css?style=flat-square)
+<br>
+
+[![image](https://img.shields.io/badge/-Website%20Dokumentasi%20✈-informational?style=for-the-badge)](https://frastyle.com)
 
 </div>
+
+---
 
 <h2 align="center"> 📌 Instalasi </h2>
 
@@ -76,7 +81,7 @@ git clone https://github.com/frastyle/frastyle-css.git
 
 | <img width="40px" ismap alt="Chrome" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/chrome.png?raw=true"> | <img width="40px" ismap alt="Firefox" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/firefox.png?raw=true"> | <img width="40px" ismap alt="Opera" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/opera.png?raw=true"> | <img width="40px" ismap alt="Edge" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/edge.png?raw=true"> | <img width="40px" ismap alt="Safari" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/safari.png?raw=true"> | <img width="40px" ismap alt="Internet Explorer" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/ie.png?raw=true"> | <img width="40px" ismap alt="Samsung" src="https://github.com/bagasnur/frastyle-resource/blob/main/browser-support/samsung.png?raw=true"> |
 | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                Terakhir                                                                 |                                                                 Terakhir                                                                  |                                                               Terakhir                                                                |                                                              Terakhir                                                               |                                                                   11+                                                                   |                                                                      11+                                                                       |                                                                    9+                                                                     |
+|                                                                Terakhir                                                                 |                                                                 Terakhir                                                                  |                                                               Terakhir                                                                |                                                              Terakhir                                                               |                                                                   15+                                                                   |                                                                      11+                                                                       |                                                                    14+                                                                    |
 
 <br>
 

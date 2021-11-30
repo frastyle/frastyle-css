@@ -38,10 +38,10 @@
 		"ie >= 11",
 		"edge >= 85",
 		"opera >= 70",
-		"ios >= 10",
-		"safari >= 11",
+		"ios >= 12",
+		"safari >= 15",
 		"firefox >= 78",
-		"samsung >= 9"
+		"samsung >= 14"
 	],
 	"devDependencies": {
 		"autoprefixer": "9.7.6",
