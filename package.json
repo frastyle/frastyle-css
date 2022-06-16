@@ -46,6 +46,10 @@
 	"devDependencies": {
 		"autoprefixer": "10.4.7",
 		"cssnano": "5.1.11",
+		"cssnano-preset-advanced": "5.3.7",
+		"eslint": "^7.32.0 || ^8.2.0",
+		"eslint-config-airbnb-base": "latest",
+		"eslint-plugin-import": "^2.25.2",
 		"gulp": "4.0.2",
 		"gulp-cli": "2.3.0",
 		"gulp-header-comment": "0.10.0",
