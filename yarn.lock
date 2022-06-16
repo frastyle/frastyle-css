@@ -896,15 +896,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssbeautify@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "cssbeautify@npm:0.3.1"
-  bin:
-    cssbeautify: bin/cssbeautify
-  checksum: 8553be112a64cf3eca4d0e47a0fa785863b36deccfea1be69a07549f7c14f15a8169326aa01b406e1fbba435c06571b73d8b87cd09bb72807cd25ee458714ff2
-  languageName: node
-  linkType: hard
-
 "cssesc@npm:^3.0.0":
   version: 3.0.0
   resolution: "cssesc@npm:3.0.0"
@@ -1538,16 +1529,15 @@ __metadata:
   dependencies:
     autoprefixer: 10.4.7
     cssnano: 5.1.11
-    gulp: ^4.0.2
-    gulp-cli: ^2.3.0
-    gulp-cssbeautify: ^3.0.1
-    gulp-header-comment: ^0.10.0
-    gulp-merge-media-queries: ^0.2.1
+    gulp: 4.0.2
+    gulp-cli: 2.3.0
+    gulp-header-comment: 0.10.0
+    gulp-merge-media-queries: 0.2.1
     gulp-postcss: 9.0.1
-    gulp-rename: ^2.0.0
-    gulp-sass: ^5.1.0
+    gulp-rename: 2.0.0
+    gulp-sass: 5.1.0
     prettier: 2.7.1
-    sass: ^1.52.3
+    sass: 1.52.3
   languageName: unknown
   linkType: soft
 
@@ -1791,7 +1781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-cli@npm:^2.2.0, gulp-cli@npm:^2.3.0":
+"gulp-cli@npm:2.3.0, gulp-cli@npm:^2.2.0":
   version: 2.3.0
   resolution: "gulp-cli@npm:2.3.0"
   dependencies:
@@ -1819,18 +1809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-cssbeautify@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "gulp-cssbeautify@npm:3.0.1"
-  dependencies:
-    cssbeautify: ^0.3.1
-    plugin-error: ^1.0.1
-    through2: ^4.0.2
-  checksum: c09066d16e4a367ab4f952eb0f80296267fdf121a699e084aaaf0cdbb2797e8f4113962e33f497aaf060dcb1d6edcf600f8a04bafc7689f7eba97efe898b525f
-  languageName: node
-  linkType: hard
-
-"gulp-header-comment@npm:^0.10.0":
+"gulp-header-comment@npm:0.10.0":
   version: 0.10.0
   resolution: "gulp-header-comment@npm:0.10.0"
   dependencies:
@@ -1848,7 +1827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-merge-media-queries@npm:^0.2.1":
+"gulp-merge-media-queries@npm:0.2.1":
   version: 0.2.1
   resolution: "gulp-merge-media-queries@npm:0.2.1"
   dependencies:
@@ -1874,14 +1853,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-rename@npm:^2.0.0":
+"gulp-rename@npm:2.0.0":
   version: 2.0.0
   resolution: "gulp-rename@npm:2.0.0"
   checksum: b9add0d130487dee6067206eebfc3867e4e254117edef154e8c270e3111b112335439ac1cac1519d6a32541343e04bd299484253a333b4e34c7d430039953e99
   languageName: node
   linkType: hard
 
-"gulp-sass@npm:^5.1.0":
+"gulp-sass@npm:5.1.0":
   version: 5.1.0
   resolution: "gulp-sass@npm:5.1.0"
   dependencies:
@@ -1911,7 +1890,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp@npm:^4.0.2":
+"gulp@npm:4.0.2":
   version: 4.0.2
   resolution: "gulp@npm:4.0.2"
   dependencies:
@@ -4229,7 +4208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.52.3":
+"sass@npm:1.52.3":
   version: 1.52.3
   resolution: "sass@npm:1.52.3"
   dependencies:
@@ -4681,7 +4660,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"through2@npm:4.0.2, through2@npm:^4.0.2":
+"through2@npm:4.0.2":
   version: 4.0.2
   resolution: "through2@npm:4.0.2"
   dependencies:
