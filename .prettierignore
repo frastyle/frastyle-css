@@ -1,6 +1,7 @@
 # Ignore Folder:
 .yarn/*
 build
+dist
 node_modules
 
 # Ignore File:

@@ -44,18 +44,18 @@
 		"samsung >= 14"
 	],
 	"devDependencies": {
-		"autoprefixer": "9.7.6",
-		"cssnano": "4.1.10",
+		"autoprefixer": "10.4.7",
+		"cssnano": "5.1.11",
 		"gulp": "^4.0.2",
 		"gulp-cli": "^2.3.0",
-		"gulp-cssbeautify": "^3.0.0",
-		"gulp-header-comment": "^0.9.0",
+		"gulp-cssbeautify": "^3.0.1",
+		"gulp-header-comment": "^0.10.0",
 		"gulp-merge-media-queries": "^0.2.1",
-		"gulp-postcss": "8.0.0",
+		"gulp-postcss": "9.0.1",
 		"gulp-rename": "^2.0.0",
-		"gulp-sass": "^5.0.0",
-		"prettier": "2.3.2",
-		"sass": "^1.35.1"
+		"gulp-sass": "^5.1.0",
+		"prettier": "2.7.1",
+		"sass": "^1.52.3"
 	},
 	"directories": {
 		"test": "test"
